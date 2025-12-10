@@ -8,100 +8,272 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/mmota29/Desktop/proj2fall2025-Group-C_10/proj2fall2025-Group-C_10/toolflow/cpre3810-toolflow
-Emem
-Z1 w1765374390
-Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Eex_mem_reg
+Z1 w1765390533
+Z2 DPx4 work 11 riscv_types 0 22 2;FZF?Fh1F]>HV7zG4WNl2
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
+!i122 9
 R0
-Z5 8proj/src/TopLevel/mem.vhd
-Z6 Fproj/src/TopLevel/mem.vhd
+Z5 8proj/src/TopLevel/EX_MEM_reg.vhd
+Z6 Fproj/src/TopLevel/EX_MEM_reg.vhd
 l0
-L8 1
-V`DCP5]PX0@1FzLJ]HFPC51
-!s100 fRlcaiTJZJ1H;nZh;8=LI3
+L5 1
+VCBbH2f[=Z9hE>JSGnGNEC1
+!s100 JO`BBholE`3>aO@L[Sn?m2
 Z7 OL;C;2025.1_2;82
 33
-Z8 !s110 1765374878
+Z8 !s110 1765394971
 !i10b 1
-Z9 !s108 1765374878.000000
-Z10 !s90 -2008|-work|internal/ModelSimContainer/work|proj/src/RISCV_types.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|proj/src/TopLevel/RISCV_Processor.vhd|proj/src/TopLevel/mem.vhd|proj/src/TopLevel/src/imm_gen.vhd|proj/src/TopLevel/src/NBit_Reg.vhd|proj/src/TopLevel/src/data_mem.vhd|proj/src/TopLevel/src/AddSub.vhd|proj/src/TopLevel/src/ALU.vhd|proj/src/TopLevel/src/control_unit.vhd|proj/src/TopLevel/src/mux32to1_32.vhd|proj/src/TopLevel/src/riscv_cpu.vhd|proj/src/TopLevel/src/array32.vhd|proj/src/TopLevel/src/control_pkg.vhd|proj/src/TopLevel/src/riscv_cpu_sw.vhd|proj/src/TopLevel/src/fetch_unit.vhd|proj/src/TopLevel/src/RegFile.vhd|proj/src/TopLevel/src/dffg.vhd|proj/src/TopLevel/src/decoder5to32.vhd|proj/src/TopLevel/src/barrel_shifter.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/tb_SecondDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/SecondDatapath.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/FirstDatapath.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/tb_FirstDatapath.vhd|proj/src/TopLevel/src/RegFile/RegFile.vhd|proj/src/TopLevel/src/RegFile/tb_RegFile.vhd|proj/src/TopLevel/src/Memory/tb_dmem.vhd|proj/src/TopLevel/src/Memory/mem.vhd|proj/src/TopLevel/src/Extenders/tb_extender_12to32.vhd|proj/src/TopLevel/src/Extenders/extender_12to32.vhd|
-!s107 proj/src/TopLevel/src/Extenders/extender_12to32.vhd|proj/src/TopLevel/src/Extenders/tb_extender_12to32.vhd|proj/src/TopLevel/src/Memory/mem.vhd|proj/src/TopLevel/src/Memory/tb_dmem.vhd|proj/src/TopLevel/src/RegFile/tb_RegFile.vhd|proj/src/TopLevel/src/RegFile/RegFile.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/tb_FirstDatapath.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/FirstDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/SecondDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/tb_SecondDatapath.vhd|proj/src/TopLevel/src/barrel_shifter.vhd|proj/src/TopLevel/src/decoder5to32.vhd|proj/src/TopLevel/src/dffg.vhd|proj/src/TopLevel/src/RegFile.vhd|proj/src/TopLevel/src/fetch_unit.vhd|proj/src/TopLevel/src/riscv_cpu_sw.vhd|proj/src/TopLevel/src/control_pkg.vhd|proj/src/TopLevel/src/array32.vhd|proj/src/TopLevel/src/riscv_cpu.vhd|proj/src/TopLevel/src/mux32to1_32.vhd|proj/src/TopLevel/src/control_unit.vhd|proj/src/TopLevel/src/ALU.vhd|proj/src/TopLevel/src/AddSub.vhd|proj/src/TopLevel/src/data_mem.vhd|proj/src/TopLevel/src/NBit_Reg.vhd|proj/src/TopLevel/src/imm_gen.vhd|proj/src/TopLevel/mem.vhd|proj/src/TopLevel/RISCV_Processor.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|
+Z9 !s108 1765394971.000000
+Z10 !s90 -2008|-work|internal/ModelSimContainer/work|proj/src/RISCV_types.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|proj/src/TopLevel/ID_EX_reg.vhd|proj/src/TopLevel/MEM_WB_reg.vhd|proj/src/TopLevel/RISCV_Processor.vhd|proj/src/TopLevel/IF_ID_reg.vhd|proj/src/TopLevel/mem.vhd|proj/src/TopLevel/EX_MEM_reg.vhd|proj/src/TopLevel/src/imm_gen.vhd|proj/src/TopLevel/src/NBit_Reg.vhd|proj/src/TopLevel/src/data_mem.vhd|proj/src/TopLevel/src/AddSub.vhd|proj/src/TopLevel/src/ALU.vhd|proj/src/TopLevel/src/control_unit.vhd|proj/src/TopLevel/src/mux32to1_32.vhd|proj/src/TopLevel/src/riscv_cpu.vhd|proj/src/TopLevel/src/array32.vhd|proj/src/TopLevel/src/control_pkg.vhd|proj/src/TopLevel/src/riscv_cpu_sw.vhd|proj/src/TopLevel/src/fetch_unit.vhd|proj/src/TopLevel/src/RegFile.vhd|proj/src/TopLevel/src/dffg.vhd|proj/src/TopLevel/src/decoder5to32.vhd|proj/src/TopLevel/src/barrel_shifter.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/tb_SecondDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/SecondDatapath.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/FirstDatapath.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/tb_FirstDatapath.vhd|proj/src/TopLevel/src/RegFile/RegFile.vhd|proj/src/TopLevel/src/RegFile/tb_RegFile.vhd|proj/src/TopLevel/src/Memory/tb_dmem.vhd|proj/src/TopLevel/src/Memory/mem.vhd|proj/src/TopLevel/src/Extenders/tb_extender_12to32.vhd|proj/src/TopLevel/src/Extenders/extender_12to32.vhd|
+Z11 !s107 proj/src/TopLevel/src/Extenders/extender_12to32.vhd|proj/src/TopLevel/src/Extenders/tb_extender_12to32.vhd|proj/src/TopLevel/src/Memory/mem.vhd|proj/src/TopLevel/src/Memory/tb_dmem.vhd|proj/src/TopLevel/src/RegFile/tb_RegFile.vhd|proj/src/TopLevel/src/RegFile/RegFile.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/tb_FirstDatapath.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/FirstDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/SecondDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/tb_SecondDatapath.vhd|proj/src/TopLevel/src/barrel_shifter.vhd|proj/src/TopLevel/src/decoder5to32.vhd|proj/src/TopLevel/src/dffg.vhd|proj/src/TopLevel/src/RegFile.vhd|proj/src/TopLevel/src/fetch_unit.vhd|proj/src/TopLevel/src/riscv_cpu_sw.vhd|proj/src/TopLevel/src/control_pkg.vhd|proj/src/TopLevel/src/array32.vhd|proj/src/TopLevel/src/riscv_cpu.vhd|proj/src/TopLevel/src/mux32to1_32.vhd|proj/src/TopLevel/src/control_unit.vhd|proj/src/TopLevel/src/ALU.vhd|proj/src/TopLevel/src/AddSub.vhd|proj/src/TopLevel/src/data_mem.vhd|proj/src/TopLevel/src/NBit_Reg.vhd|proj/src/TopLevel/src/imm_gen.vhd|proj/src/TopLevel/EX_MEM_reg.vhd|proj/src/TopLevel/mem.vhd|proj/src/TopLevel/IF_ID_reg.vhd|proj/src/TopLevel/RISCV_Processor.vhd|proj/src/TopLevel/MEM_WB_reg.vhd|proj/src/TopLevel/ID_EX_reg.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|
 !i113 0
-Z11 o-2008 -work internal/ModelSimContainer/work
-Z12 tExplicit 1 CvgOpt 0
+Z12 o-2008 -work internal/ModelSimContainer/work
+Z13 tExplicit 1 CvgOpt 0
 Artl
 R2
 R3
 R4
-DEx4 work 3 mem 0 22 `DCP5]PX0@1FzLJ]HFPC51
-!i122 0
-l37
-L27 24
-V7=z6;Jh7Kho4J>IEcD31I0
-!s100 OI8_3><BhDkT3l3n8`OXd3
+Z14 DEx4 work 10 ex_mem_reg 0 22 CBbH2f[=Z9hE>JSGnGNEC1
+!i122 9
+l43
+Z15 L33 50
+Z16 VZHAKFN58;2geQ?^UEh@3g3
+Z17 !s100 [^R@:U[ce^LgQNNB0nP7P3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-Z13 !s107 proj/src/TopLevel/src/Extenders/extender_12to32.vhd|proj/src/TopLevel/src/Extenders/tb_extender_12to32.vhd|proj/src/TopLevel/src/Memory/mem.vhd|proj/src/TopLevel/src/Memory/tb_dmem.vhd|proj/src/TopLevel/src/RegFile/tb_RegFile.vhd|proj/src/TopLevel/src/RegFile/RegFile.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/tb_FirstDatapath.vhd|proj/src/TopLevel/src/MyFirstRISCVDatapath/FirstDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/SecondDatapath.vhd|proj/src/TopLevel/src/MySecondRISC-VDatapath/tb_SecondDatapath.vhd|proj/src/TopLevel/src/barrel_shifter.vhd|proj/src/TopLevel/src/decoder5to32.vhd|proj/src/TopLevel/src/dffg.vhd|proj/src/TopLevel/src/RegFile.vhd|proj/src/TopLevel/src/fetch_unit.vhd|proj/src/TopLevel/src/riscv_cpu_sw.vhd|proj/src/TopLevel/src/control_pkg.vhd|proj/src/TopLevel/src/array32.vhd|proj/src/TopLevel/src/riscv_cpu.vhd|proj/src/TopLevel/src/mux32to1_32.vhd|proj/src/TopLevel/src/control_unit.vhd|proj/src/TopLevel/src/ALU.vhd|proj/src/TopLevel/src/AddSub.vhd|proj/src/TopLevel/src/data_mem.vhd|proj/src/TopLevel/src/NBit_Reg.vhd|proj/src/TopLevel/src/imm_gen.vhd|proj/src/TopLevel/mem.vhd|proj/src/TopLevel/RISCV_Processor.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|
-!i113 0
 R11
+!i113 0
 R12
-Eriscv_processor
-R1
-Z14 DPx4 work 11 riscv_types 0 22 2;FZF?Fh1F]>HV7zG4WNl2
+R13
+Eid_ex_reg
+Z18 w1765384576
 R3
 R4
-!i122 0
+!i122 9
 R0
-Z15 8proj/src/TopLevel/RISCV_Processor.vhd
-Z16 Fproj/src/TopLevel/RISCV_Processor.vhd
+Z19 8proj/src/TopLevel/ID_EX_reg.vhd
+Z20 Fproj/src/TopLevel/ID_EX_reg.vhd
 l0
-Z17 L24 1
-VnbGEXFli^;8LToCW34A6T2
-!s100 2QlZ7gG0Tc=VN8QQV?oB71
+L5 1
+VaQU><^acjF5[b^hgzDM`j0
+!s100 ;Q5F^HfB=bIW0o;azn^bc1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R13
-!i113 0
 R11
+!i113 0
 R12
-Astructure
-R14
+R13
+Artl
 R3
 R4
-DEx4 work 15 riscv_processor 0 22 nbGEXFli^;8LToCW34A6T2
-!i122 0
-l74
-L36 70
-VYH@k^85KbOEc8Sf27c9m:0
-!s100 C5gVLgRc^8F5@ROm8;2831
+Z21 DEx4 work 9 id_ex_reg 0 22 aQU><^acjF5[b^hgzDM`j0
+!i122 9
+l56
+Z22 L55 47
+Z23 Vafmg;XPaO6RnQ3Jd2lgO01
+Z24 !s100 A_XV^5YQJ]8`Talc9mmWh1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R13
-!i113 0
 R11
+!i113 0
 R12
+R13
+Eif_id_reg
+Z25 w1765390235
+R2
+R3
+R4
+!i122 9
+R0
+Z26 8proj/src/TopLevel/IF_ID_reg.vhd
+Z27 Fproj/src/TopLevel/IF_ID_reg.vhd
+l0
+L5 1
+V8KS^NgKDWhL8KlllT`^SP2
+!s100 gamX8;gCL5O]C5Q1mj_;Z2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+Z28 DEx4 work 9 if_id_reg 0 22 8KS^NgKDWhL8KlllT`^SP2
+!i122 9
+l20
+Z29 L17 22
+Z30 Vcki1Z^MT]YXakl3T2J8>L0
+Z31 !s100 8zm6HZkFolXRX]FU6l0Z>3
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Emem
+Z32 w1765374390
+Z33 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 9
+R0
+Z34 8proj/src/TopLevel/mem.vhd
+Z35 Fproj/src/TopLevel/mem.vhd
+l0
+L8 1
+V`DCP5]PX0@1FzLJ]HFPC51
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Artl
+R33
+R3
+R4
+Z36 DEx4 work 3 mem 0 22 `DCP5]PX0@1FzLJ]HFPC51
+!i122 9
+l37
+Z37 L27 24
+Z38 V7=z6;Jh7Kho4J>IEcD31I0
+Z39 !s100 OI8_3><BhDkT3l3n8`OXd3
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Emem_wb_reg
+Z40 w1765390645
+R2
+R3
+R4
+!i122 9
+R0
+Z41 8proj/src/TopLevel/MEM_WB_reg.vhd
+Z42 Fproj/src/TopLevel/MEM_WB_reg.vhd
+l0
+L5 1
+Vm_h[Y16T_P1L1zlI=YPnn1
+!s100 U8zCCVmDc6A^ke]eGlOEg2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+Z43 DEx4 work 10 mem_wb_reg 0 22 m_h[Y16T_P1L1zlI=YPnn1
+!i122 9
+l37
+Z44 L29 42
+Z45 V9X56;7<E>7]]<gNml`I3z2
+Z46 !s100 3QdNY]zmX3FB0n2A750G=0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eriscv_processor
+Z47 w1765394329
+R2
+R33
+R3
+R4
+!i122 9
+R0
+Z48 8proj/src/TopLevel/RISCV_Processor.vhd
+Z49 Fproj/src/TopLevel/RISCV_Processor.vhd
+l0
+L18 1
+V>8dh;7J7eO:Fa;4Uokig42
+!s100 9>nb43A>3hW5;BUI[>nO`1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Astructure
+R2
+R33
+R3
+R4
+Z50 DEx4 work 15 riscv_processor 0 22 >8dh;7J7eO:Fa;4Uokig42
+!i122 9
+l314
+Z51 L30 628
+Z52 VLJk0>KO?Y<lj4K5gU1nmm0
+Z53 !s100 K[H78HX`@k^7AAN]kU]W81
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
 Priscv_types
 R3
 R4
-!i122 0
-R1
+!i122 9
+R32
 R0
-Z18 8proj/src/RISCV_types.vhd
-Z19 Fproj/src/RISCV_types.vhd
+Z54 8proj/src/RISCV_types.vhd
+Z55 Fproj/src/RISCV_types.vhd
 l0
 L15 13
 V2;FZF?Fh1F]>HV7zG4WNl2
@@ -112,41 +284,41 @@ R8
 !i10b 1
 R9
 R10
-R13
-!i113 0
 R11
+!i113 0
 R12
+R13
 Bbody
-R14
+R2
 R3
 R4
-!i122 0
+!i122 9
 l0
-Z20 L29 3
-Z21 V6lc@>eZFzbVmZRE>eR;T=2
-Z22 !s100 GDR?4:nAbmIiboG0gc@;N2
+Z56 L29 3
+Z57 V6lc@>eZFzbVmZRE>eR;T=2
+Z58 !s100 GDR?4:nAbmIiboG0gc@;N2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R13
-!i113 0
 R11
+!i113 0
 R12
+R13
 Etb
-Z23 w1765374344
-Z24 DPx3 std 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
-Z25 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+Z59 w1765374344
+Z60 DPx3 std 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
+Z61 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
 R3
 R4
-!i122 0
+!i122 9
 R0
-Z26 8internal/testpy/tb.vhd
-Z27 Finternal/testpy/tb.vhd
+Z62 8internal/testpy/tb.vhd
+Z63 Finternal/testpy/tb.vhd
 l0
-R17
+L24 1
 VVnzHcnmWmi<jE?5a3XOiF3
 !s100 ;QHYbWb3iZ[[A?fo=9D=X3
 R7
@@ -155,28 +327,28 @@ R8
 !i10b 1
 R9
 R10
-R13
-!i113 0
 R11
+!i113 0
 R12
+R13
 Amixed
-R24
-R25
+R60
+R61
 R3
 R4
-DEx4 work 2 tb 0 22 VnzHcnmWmi<jE?5a3XOiF3
-!i122 0
+Z64 DEx4 work 2 tb 0 22 VnzHcnmWmi<jE?5a3XOiF3
+!i122 9
 l56
-L31 127
-V5[oF0n<T4Z>Xdce12QbYh2
-!s100 ^B9]<VXY=N5NKKgkQI20c3
+Z65 L31 127
+Z66 V5[oF0n<T4Z>Xdce12QbYh2
+Z67 !s100 ^B9]<VXY=N5NKKgkQI20c3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R13
-!i113 0
 R11
+!i113 0
 R12
+R13
