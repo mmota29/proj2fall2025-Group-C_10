@@ -1,0 +1,740 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11e vcom 2025.1_2 2025.04, Apr  7 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders
+T_opt
+!s110 1759109434
+V0C`3jW9fTn1o2Yo5Qh5K]2
+04 15 6 work extender_12to32 struct 1
+=1-000ae431a4f1-68d9e13a-79bb0-ce24
+R0
+Z2 !s12f OEM100
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 !s135 nogc
+Z6 o-quiet -auto_acc_if_foreign -work work +acc
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2025.1_2;82
+R1
+T_opt1
+!s110 1759110182
+VGz=4J8>UoJA5NHli[Q53a3
+04 18 6 work tb_extender_12to32 struct 1
+=1-000ae431a4f1-68d9e426-86de3-d374
+R0
+R2
+R3
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+R1
+Eaddsub
+Z9 w1759439849
+Z10 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 24
+R1
+Z13 8/home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd
+Z14 F/home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd
+l0
+L11 1
+VeYE5mNDENbBA30:2Sc<::2
+!s100 Gz:aIaX4zdYe4`FUkKi@>3
+Z15 OL;C;2025.1_2;82
+32
+Z16 !s110 1759888455
+!i10b 1
+Z17 !s108 1759888455.000000
+Z18 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd|
+Z19 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd|
+!i113 0
+Z20 o-work work
+Z21 tExplicit 1 CvgOpt 0
+Adataflow
+R10
+R11
+R12
+DEx4 work 6 addsub 0 22 eYE5mNDENbBA30:2Sc<::2
+!i122 24
+l30
+L24 21
+VMmSmd5lA[hilfXNH8jTVG2
+!s100 OG?cY0V7<?><ab;AknRck0
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Parray32_pkg
+R11
+R12
+!i122 19
+w1759873374
+R1
+8/home/gbaker05/CPRE381/QuestaSim/Lab2/array32.vhd
+F/home/gbaker05/CPRE381/QuestaSim/Lab2/array32.vhd
+l0
+L5 4
+VKA`5>;f`9YlnQYOPJ6z=H0
+!s100 JeLcCKH`@>c4P0QOfQF6`3
+R15
+32
+!s110 1759888449
+!i10b 1
+!s108 1759888449.000000
+!s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/array32.vhd|
+!s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/array32.vhd|
+!i113 0
+R20
+R21
+Edecoder5to32
+Z22 w1758558298
+R11
+R12
+!i122 18
+R1
+Z23 8/home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd
+Z24 F/home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd
+l0
+L5 1
+V1@F6I291PmUac[kOMm@K93
+!s100 K2RH>JE5f]BYnJTX<Y9lZ0
+R15
+32
+Z25 !s110 1759888448
+!i10b 1
+Z26 !s108 1759888448.000000
+Z27 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd|
+Z28 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd|
+!i113 0
+R20
+R21
+Astruct
+R11
+R12
+DEx4 work 12 decoder5to32 0 22 1@F6I291PmUac[kOMm@K93
+!i122 18
+l14
+L13 37
+V6E?WF@OF4ZOOZZMV26g;M1
+!s100 `De2`[P2D67`f=nW?8nCU2
+R15
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R20
+R21
+Edffg
+Z29 w1756242071
+R11
+R12
+!i122 20
+R1
+Z30 8/home/gbaker05/CPRE381/QuestaSim/Lab2/dffg.vhd
+Z31 F/home/gbaker05/CPRE381/QuestaSim/Lab2/dffg.vhd
+l0
+Z32 L23 1
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R15
+32
+Z33 !s110 1759888450
+!i10b 1
+Z34 !s108 1759888450.000000
+Z35 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/dffg.vhd|
+Z36 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/dffg.vhd|
+!i113 0
+R20
+R21
+Amixed
+R11
+R12
+Z37 DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 20
+l37
+L33 29
+V`CHXPZKVEek`3gFWL_zFm2
+!s100 iOdlTUid@@]UimFK_53^C1
+R15
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 0
+R20
+R21
+Eextender_12to32
+Z38 w1759109392
+R11
+R12
+!i122 0
+R1
+Z39 8/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd
+Z40 F/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd
+l0
+L5 1
+VUN=@QTbmCNP9@D;Fak=DU2
+!s100 CW_KcDjI18fPG1I;BmO@a1
+R15
+32
+Z41 !s110 1759109429
+!i10b 1
+Z42 !s108 1759109429.000000
+Z43 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd|
+Z44 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd|
+!i113 0
+R20
+R21
+Astruct
+R11
+R12
+Z45 DEx4 work 15 extender_12to32 0 22 UN=@QTbmCNP9@D;Fak=DU2
+!i122 0
+l14
+L13 11
+VUEfIfZN;oRkl_PMJHZ4IU1
+!s100 hin6:aV8lj7OW`R0e5S001
+R15
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 0
+R20
+R21
+Emem
+R29
+R10
+R11
+R12
+!i122 5
+R1
+Z46 8/home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/mem.vhd
+Z47 F/home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R15
+32
+Z48 !s110 1759888216
+!i10b 1
+Z49 !s108 1759888216.000000
+Z50 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/mem.vhd|
+Z51 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/mem.vhd|
+!i113 0
+R20
+R21
+Artl
+R10
+R11
+R12
+Z52 DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 5
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R15
+32
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 0
+R20
+R21
+Emux32to1_32
+Z53 w1759873445
+Z54 DPx4 work 11 array32_pkg 0 22 KA`5>;f`9YlnQYOPJ6z=H0
+R10
+R11
+R12
+!i122 21
+R1
+Z55 8/home/gbaker05/CPRE381/QuestaSim/Lab2/mux32to1_32.vhd
+Z56 F/home/gbaker05/CPRE381/QuestaSim/Lab2/mux32to1_32.vhd
+l0
+L7 1
+VIVXeEcN4kU8m9[9ZW`EJa3
+!s100 ZgTIPFB8gmL0:[9LjIM6K2
+R15
+32
+Z57 !s110 1759888451
+!i10b 1
+Z58 !s108 1759888451.000000
+Z59 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/mux32to1_32.vhd|
+Z60 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/mux32to1_32.vhd|
+!i113 0
+R20
+R21
+Astruct
+R54
+R10
+R11
+R12
+Z61 DEx4 work 11 mux32to1_32 0 22 IVXeEcN4kU8m9[9ZW`EJa3
+!i122 21
+l18
+L16 7
+VP87XXSe@1TFGR^ES6R:dD0
+!s100 WhPD[A>]M]7Sh_^1WJj2S1
+R15
+32
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 0
+R20
+R21
+Enbit_reg
+Z62 w1758555776
+R11
+R12
+!i122 22
+R1
+Z63 8/home/gbaker05/CPRE381/QuestaSim/Lab2/NBit_Reg.vhd
+Z64 F/home/gbaker05/CPRE381/QuestaSim/Lab2/NBit_Reg.vhd
+l0
+L5 1
+VCnAAdCIhCAde1o86K?Dha0
+!s100 c5@Soa7ZERWW?dILFU=;_1
+R15
+32
+Z65 !s110 1759888453
+!i10b 1
+Z66 !s108 1759888453.000000
+Z67 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/NBit_Reg.vhd|
+Z68 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/NBit_Reg.vhd|
+!i113 0
+R20
+R21
+Astruct
+R37
+R11
+R12
+Z69 DEx4 work 8 nbit_reg 0 22 CnAAdCIhCAde1o86K?Dha0
+!i122 22
+l16
+L15 13
+VQ2==oTS1[Ie0n1jTMPzeg2
+!s100 ^fKa3]3WeKH_bDQCelLnI0
+R15
+32
+R65
+!i10b 1
+R66
+R67
+R68
+!i113 0
+R20
+R21
+Eregfile
+Z70 w1759874539
+R54
+R10
+R11
+R12
+!i122 23
+R1
+Z71 8/home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd
+Z72 F/home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd
+l0
+Z73 L12 1
+V76hjYZ?>^lY]j`YB<XT?51
+!s100 ^8EDCFOV4zCb]DL^k9j@j3
+R15
+32
+Z74 !s110 1759888454
+!i10b 1
+Z75 !s108 1759888454.000000
+Z76 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd|
+Z77 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd|
+!i113 0
+R20
+R21
+Amixed
+R54
+R10
+R11
+R12
+Z78 DEx4 work 7 regfile 0 22 76hjYZ?>^lY]j`YB<XT?51
+!i122 23
+l33
+L29 26
+VDJM7kHA_4a]d`Bk3LSGM41
+!s100 XlB1hHzb8]1:HJSJblR8S1
+R15
+32
+R74
+!i10b 1
+R75
+R76
+R77
+!i113 0
+R20
+R21
+Eseconddatapath
+Z79 w1759888323
+R10
+R11
+R12
+!i122 13
+R1
+Z80 8/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd
+Z81 F/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd
+l0
+L6 1
+V_MTZm4mkWC;hA8;`^el1n3
+!s100 g>EAnlL1ca_WKW87`T3Ic1
+R15
+32
+Z82 !s110 1759888397
+!i10b 1
+Z83 !s108 1759888397.000000
+Z84 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd|
+Z85 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd|
+!i113 0
+R20
+R21
+Astruct
+R52
+DEx4 work 7 regfile 0 22 JCR[Z]h5AaFHQgO]eoCHW1
+R45
+R10
+R11
+R12
+DEx4 work 14 seconddatapath 0 22 _MTZm4mkWC;hA8;`^el1n3
+!i122 13
+l35
+L25 83
+V8oFHfOMM7<`6S9j5RZ5l]0
+!s100 eHRFF423e?<QLWf<NZa^;1
+R15
+32
+R82
+!i10b 1
+R83
+R84
+R85
+!i113 0
+R20
+R21
+Etb_decoder5to32
+w1758558705
+R10
+R11
+R12
+!i122 17
+R1
+8/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_decoder5to32.vhd
+F/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_decoder5to32.vhd
+l0
+L6 1
+V4]dZ:fj2WzUdJY`=T;d_A1
+!s100 ^YMjTj<UAFT8ilL:87fWP2
+R15
+32
+!s110 1759888444
+!i10b 1
+!s108 1759888444.000000
+!s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_decoder5to32.vhd|
+!s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/tb_decoder5to32.vhd|
+!i113 0
+R20
+R21
+Etb_dffg
+R29
+R11
+R12
+!i122 25
+R1
+Z86 8/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_dffg.vhd
+Z87 F/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_dffg.vhd
+l0
+R32
+VEhC826iNlPK<H5[>Kb68Y3
+!s100 _@1Y`b4>C@@3dFKeCkFbz1
+R15
+32
+Z88 !s110 1759888456
+!i10b 1
+Z89 !s108 1759888456.000000
+Z90 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_dffg.vhd|
+Z91 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/tb_dffg.vhd|
+!i113 0
+R20
+R21
+Abehavior
+R11
+R12
+DEx4 work 7 tb_dffg 0 22 EhC826iNlPK<H5[>Kb68Y3
+!i122 25
+l45
+L27 75
+VLD2Ne7]eIUQBQzKVG@e681
+!s100 McQ;1U@Ti8TCBh>42ldW82
+R15
+32
+R88
+!i10b 1
+R89
+R90
+R91
+!i113 0
+R20
+R21
+Etb_dmem
+Z92 w1759885919
+R10
+R11
+R12
+!i122 6
+R1
+Z93 8/home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/tb_dmem.vhd
+Z94 F/home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/tb_dmem.vhd
+l0
+L6 1
+Vi_UDX@2jode[f3[GlGICi1
+!s100 ^OAJzL@cWE1lJa460C1Mm0
+R15
+32
+Z95 !s110 1759888222
+!i10b 1
+Z96 !s108 1759888222.000000
+Z97 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/tb_dmem.vhd|
+Z98 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/Memory/tb_dmem.vhd|
+!i113 0
+R20
+R21
+Astruct
+R52
+R10
+R11
+R12
+DEx4 work 7 tb_dmem 0 22 i_UDX@2jode[f3[GlGICi1
+!i122 6
+l22
+L9 70
+VPkZYKE_@><[6UoI@R8;Ah0
+!s100 Ae@eSkb2`QDj25eG;dCdB2
+R15
+32
+R95
+!i10b 1
+R96
+R97
+R98
+!i113 0
+R20
+R21
+Etb_extender_12to32
+Z99 w1759110105
+R11
+R12
+!i122 2
+R1
+Z100 8/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/tb_extender_12to32.vhd
+Z101 F/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/tb_extender_12to32.vhd
+l0
+L5 1
+VN>1[P=0U_9f2`68L32E8W1
+!s100 @dzVRfzfZMIBidKOlQ;1h3
+R15
+32
+Z102 !s110 1759110107
+!i10b 1
+Z103 !s108 1759110107.000000
+Z104 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/tb_extender_12to32.vhd|
+Z105 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/tb_extender_12to32.vhd|
+!i113 0
+R20
+R21
+Astruct
+R45
+R11
+R12
+DEx4 work 18 tb_extender_12to32 0 22 N>1[P=0U_9f2`68L32E8W1
+!i122 2
+l13
+L8 34
+V^=>jV2F9FilI>7?HLcAO=0
+!s100 _Eda]B^m@:?[eBNV8azb13
+R15
+32
+R102
+!i10b 1
+R103
+R104
+R105
+!i113 0
+R20
+R21
+Etb_mux32to1_32
+Z106 w1759873894
+R54
+R10
+R11
+R12
+!i122 26
+R1
+Z107 8/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_mux32to1_32.vhd
+Z108 F/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_mux32to1_32.vhd
+l0
+L7 1
+VK0n:NjWFf<NnEgUNQzNJM1
+!s100 >F]LaOV2Fk3Ue^Wj:dYMQ3
+R15
+32
+Z109 !s110 1759888457
+!i10b 1
+Z110 !s108 1759888457.000000
+Z111 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_mux32to1_32.vhd|
+Z112 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/tb_mux32to1_32.vhd|
+!i113 0
+R20
+R21
+Astruct
+R61
+R54
+R10
+R11
+R12
+DEx4 work 14 tb_mux32to1_32 0 22 K0n:NjWFf<NnEgUNQzNJM1
+!i122 26
+l18
+L10 38
+V@NSn^FfWm5W_KMlh?G?H[0
+!s100 mH6A9M;FM>[CTIGk@bB@]2
+R15
+32
+R109
+!i10b 1
+R110
+R111
+R112
+!i113 0
+R20
+R21
+Etb_nbit_reg
+Z113 w1759095418
+R10
+R11
+R12
+!i122 27
+R1
+Z114 8/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_NBit_Reg.vhd
+Z115 F/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_NBit_Reg.vhd
+l0
+L6 1
+VmfMek@?SYV<Z5fSB`[B9Z0
+!s100 `FJEIMAHcFEiLHFlDPP[_2
+R15
+32
+Z116 !s110 1759888459
+!i10b 1
+Z117 !s108 1759888458.000000
+Z118 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_NBit_Reg.vhd|
+Z119 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/tb_NBit_Reg.vhd|
+!i113 0
+R20
+R21
+Astruct
+R69
+R10
+R11
+R12
+DEx4 work 11 tb_nbit_reg 0 22 mfMek@?SYV<Z5fSB`[B9Z0
+!i122 27
+l18
+L9 50
+VkddA?WT]b7:8]nV>L6Jz=3
+!s100 PQk:ZH8iie2Y;^ZlGb]g;0
+R15
+32
+R116
+!i10b 1
+R117
+R118
+R119
+!i113 0
+R20
+R21
+Etb_regfile
+Z120 w1759874901
+R54
+R10
+R11
+R12
+!i122 28
+R1
+Z121 8/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_RegFile.vhd
+Z122 F/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_RegFile.vhd
+l0
+R73
+V2?:[NgCofa>n14:ZRzoDo0
+!s100 XD52d<Y15]P^mBAg;^O=^1
+R15
+32
+Z123 !s110 1759888460
+!i10b 1
+Z124 !s108 1759888460.000000
+Z125 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/tb_RegFile.vhd|
+Z126 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/tb_RegFile.vhd|
+!i113 0
+R20
+R21
+Astruct
+R78
+R54
+R10
+R11
+R12
+Z127 DEx4 work 10 tb_regfile 0 22 2?:[NgCofa>n14:ZRzoDo0
+!i122 28
+l31
+Z128 L16 62
+Z129 VgzG69P70WZ4L[fJSCiRhc3
+Z130 !s100 0FEc1R3EglOPG=:JkFI241
+R15
+32
+R123
+!i10b 1
+R124
+R125
+R126
+!i113 0
+R20
+R21

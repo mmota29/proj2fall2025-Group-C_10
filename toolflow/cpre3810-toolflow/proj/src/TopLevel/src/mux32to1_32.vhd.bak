@@ -1,0 +1,28 @@
+--mux32to1_32.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.array32_pkg.all;
+
+entity mux32to1_32 is
+
+port (
+	sel : in std_logic_vector(4 downto 0);
+	m_in : in std_logic_vector(32*32-1 downto 0);
+	m_out: out std_logic_vector(31 downto 0)
+	);
+end entity;
+
+architecture struct of mux32to1_32 is
+
+type reg_array is array (31 downto 0) of std_logic_vector(31 downto 0);
+
+signal m_in_array : reg_array;
+
+begin
+	muxgen: for i in 0 to 31 generate
+		m_in_array(i) <= m_in((i+1)*32-1 downto i*32); --fills each register with input(32 bits 32 times)
+	end generate;
+
+	m_out <= m_in_array(to_integer(unsigned(sel)));
+end struct;

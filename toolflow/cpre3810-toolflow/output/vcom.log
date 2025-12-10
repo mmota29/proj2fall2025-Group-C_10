@@ -1,0 +1,30 @@
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+Start time: 07:54:38 on Dec 10,2025
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/src/imm_gen.vhd proj/src/TopLevel/src/NBit_Reg.vhd proj/src/TopLevel/src/data_mem.vhd proj/src/TopLevel/src/AddSub.vhd proj/src/TopLevel/src/ALU.vhd proj/src/TopLevel/src/control_unit.vhd proj/src/TopLevel/src/mux32to1_32.vhd proj/src/TopLevel/src/riscv_cpu.vhd proj/src/TopLevel/src/array32.vhd proj/src/TopLevel/src/control_pkg.vhd proj/src/TopLevel/src/riscv_cpu_sw.vhd proj/src/TopLevel/src/fetch_unit.vhd proj/src/TopLevel/src/RegFile.vhd proj/src/TopLevel/src/dffg.vhd proj/src/TopLevel/src/decoder5to32.vhd proj/src/TopLevel/src/barrel_shifter.vhd proj/src/TopLevel/src/MySecondRISC-VDatapath/tb_SecondDatapath.vhd proj/src/TopLevel/src/MySecondRISC-VDatapath/SecondDatapath.vhd proj/src/TopLevel/src/MyFirstRISCVDatapath/FirstDatapath.vhd proj/src/TopLevel/src/MyFirstRISCVDatapath/tb_FirstDatapath.vhd proj/src/TopLevel/src/RegFile/RegFile.vhd proj/src/TopLevel/src/RegFile/tb_RegFile.vhd proj/src/TopLevel/src/Memory/tb_dmem.vhd proj/src/TopLevel/src/Memory/mem.vhd proj/src/TopLevel/src/Extenders/tb_extender_12to32.vhd proj/src/TopLevel/src/Extenders/extender_12to32.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package RISCV_types
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'RISCV_types' at line 18 will be overwritten.
+-- Compiling package RISCV_types
+** Warning: proj/src/RISCV_types.vhd(29): (vcom-1615) Existing package body 'RISCV_types(body)' at line 29 will be overwritten.
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package RISCV_types
+-- Compiling entity RISCV_Processor
+-- Compiling architecture structure of RISCV_Processor
+-- Loading package NUMERIC_STD
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+** Error: (vcom-11) Could not find work.control_pkg.
+** Error (suppressible): proj/src/TopLevel/src/imm_gen.vhd(5): (vcom-1195) Cannot find expanded name "work.control_pkg".
+** Error: proj/src/TopLevel/src/imm_gen.vhd(5): Unknown expanded name.
+** Note: proj/src/TopLevel/src/imm_gen.vhd(7): VHDL Compiler exiting
+End time: 07:54:38 on Dec 10,2025, Elapsed time: 0:00:00
+Errors: 3, Warnings: 2

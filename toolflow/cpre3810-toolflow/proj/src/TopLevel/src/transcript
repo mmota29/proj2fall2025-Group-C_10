@@ -1,0 +1,1391 @@
+# //  Questa Sim-64
+# //  Version 2025.1_2 linux_x86_64 Apr  7 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:19:40 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(23): (vcom-1136) Unknown identifier "shamt".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(23): Bad resolution function (STD_LOGIC_VECTOR) for type (error).
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(23): near ":": (vcom-1576) expecting ';' or ')'.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(24): VHDL Compiler exiting
+# End time: 11:19:41 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:19:54 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(68): near "ALUOut": (vcom-1576) expecting => or '|' or '!'.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(71): VHDL Compiler exiting
+# End time: 11:19:54 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:20:40 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(75): (vcom-1581) No feasible entries for prefix operator '??'.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(75): Type error resolving prefix expression "??" as type std.STANDARD.BOOLEAN.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(75): near "=>": (vcom-1576) expecting ';'.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(100): VHDL Compiler exiting
+# End time: 11:20:40 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:21:01 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# End time: 11:21:01 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:38:08 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# End time: 11:38:08 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:38:10 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture structural of barrel_shifter
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd(80): near "others": syntax error
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd(112): VHDL Compiler exiting
+# End time: 11:38:10 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:39:02 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity control_unit
+# -- Compiling architecture rtl of control_unit
+# End time: 11:39:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:39:04 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package control_pkg
+# End time: 11:39:04 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:39:07 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture struct of riscv_cpu
+# End time: 11:39:07 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:39:11 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_riscv
+# -- Compiling architecture sim of tb_riscv
+# End time: 11:39:11 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:39:17 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture structural of barrel_shifter
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd(80): near "others": syntax error
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd(112): VHDL Compiler exiting
+# End time: 11:39:17 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:39:57 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture structural of barrel_shifter
+# End time: 11:39:57 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:39:59 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# End time: 11:39:59 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:40:01 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package control_pkg
+# End time: 11:40:01 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:40:02 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity control_unit
+# -- Compiling architecture rtl of control_unit
+# End time: 11:40:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:40:06 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package control_pkg
+# -- Compiling entity fetch_unit
+# -- Compiling architecture struct of fetch_unit
+# End time: 11:40:06 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:40:07 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture struct of riscv_cpu
+# End time: 11:40:07 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:40:09 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_riscv
+# -- Compiling architecture sim of tb_riscv
+# End time: 11:40:09 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:40:18 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_riscv_cpu
+# -- Compiling architecture sim of tb_riscv_cpu
+# End time: 11:40:18 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_riscv_cpu
+# vsim work.tb_riscv_cpu 
+# Start time: 11:40:31 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(38): (vopt-1271) Bad default binding for component instance "shifter_init: barrel_shifter".
+#  (Component generic "G_WIDTH" is not on the entity "work.barrel_shifter".)
+#  (Entity is selected because it is in the same library as the design unit that contains the component.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 11:40:32 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:17 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture structural of barrel_shifter
+# End time: 11:43:17 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:21 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(38): near "is": (vcom-1576) expecting ';'.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd(100): VHDL Compiler exiting
+# End time: 11:43:21 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:40 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture struct of ALU
+# -- Loading entity barrel_shifter
+# End time: 11:43:40 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:42 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture structural of barrel_shifter
+# End time: 11:43:42 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:44 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package control_pkg
+# End time: 11:43:44 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:45 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity control_unit
+# -- Compiling architecture rtl of control_unit
+# End time: 11:43:45 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:47 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package control_pkg
+# -- Compiling entity fetch_unit
+# -- Compiling architecture struct of fetch_unit
+# End time: 11:43:47 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:49 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture struct of riscv_cpu
+# End time: 11:43:49 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:43:54 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_riscv_cpu
+# -- Compiling architecture sim of tb_riscv_cpu
+# End time: 11:43:54 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_riscv_cpu -voptargs=+acc
+# vsim work.tb_riscv_cpu -voptargs="+acc" 
+# Start time: 11:44:09 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_riscv_cpu(sim)#1
+# Loading work.control_pkg
+# Loading work.riscv_cpu(struct)#1
+# Loading ieee.std_logic_textio(body)
+# Loading work.fetch_unit(struct)#1
+# Loading work.control_unit(rtl)#1
+# Loading work.alu(struct)#1
+# Loading work.barrel_shifter(structural)#1
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv_cpu/DUT/ALU_UNIT
+add wave -position insertpoint  \
+sim:/tb_riscv_cpu/clk \
+sim:/tb_riscv_cpu/rst
+run
+run
+run
+run
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:50:41 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture struct of riscv_cpu
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(121): near "when": (vcom-1576) expecting ',' or ')'.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(164): VHDL Compiler exiting
+# End time: 11:50:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:55:05 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture struct of riscv_cpu
+# -- Loading entity ALU
+# End time: 11:55:05 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:55:09 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture struct of riscv_cpu
+# -- Loading entity ALU
+# End time: 11:55:09 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 11:55:33 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_riscv_cpu
+# -- Compiling architecture tb of tb_riscv_cpu
+# -- Loading entity riscv_cpu
+# End time: 11:55:33 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# End time: 11:55:38 on Oct 26,2025, Elapsed time: 0:11:29
+# Errors: 0, Warnings: 2
+vsim -voptargs=+acc work.tb_riscv_cpu
+# vsim -voptargs="+acc" work.tb_riscv_cpu 
+# Start time: 11:55:42 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_riscv_cpu(tb)#1
+# Loading work.riscv_cpu(struct)#1
+# Loading work.alu(struct)#1
+# Loading work.barrel_shifter(structural)#1
+add wave -position insertpoint  \
+sim:/tb_riscv_cpu/clk \
+sim:/tb_riscv_cpu/rst
+# Load canceled
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv_cpu/uut/ALU_INST
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv_cpu/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv_cpu/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv_cpu/uut
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut/ALU_INST
+run
+run
+# ** Note: PC=0 INSTR=00500093 x1=0 x2=0 x3=0 ALUOut=00000000
+#    Time: 250 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut
+run
+# ** Note: PC=4 INSTR=00A00113 x1=0 x2=0 x3=0 ALUOut=00000000
+#    Time: 350 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut
+run
+# ** Note: PC=8 INSTR=002081B3 x1=0 x2=0 x3=0 ALUOut=00000000
+#    Time: 450 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut
+run
+# ** Note: PC=12 INSTR=00000013 x1=0 x2=0 x3=0 ALUOut=00000000
+#    Time: 550 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut
+run
+# ** Note: PC=16 INSTR=00000013 x1=0 x2=0 x3=0 ALUOut=00000000
+#    Time: 650 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut
+run
+# ** Note: PC=20 INSTR=00000000 x1=0 x2=0 x3=0 ALUOut=00000000
+#    Time: 750 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut
+run
+# ** Note: PC=24 INSTR=00000000 x1=0 x2=0 x3=0 ALUOut=00000000
+#    Time: 850 ns  Iteration: 1  Instance: /tb_riscv_cpu/uut
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:01:03 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture struct of riscv_cpu
+# -- Loading package std_logic_textio
+# -- Loading entity fetch_unit
+# -- Loading entity control_unit
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(148): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(158): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(159): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(160): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(161): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(162): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+# -- Loading entity ALU
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(136): (vcom-1167) Index value 11 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 31 downto 20.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(136): (vcom-1167) Index value 0 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 31 downto 20.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(142): (vcom-1272) Length of expected is 32; length of actual is 31.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(144): (vcom-1272) Length of expected is 32; length of actual is 33.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(158): (vcom-1272) Length of expected is 3; length of actual is 32.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(159): (vcom-1272) Length of expected is 3; length of actual is 32.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(160): (vcom-1272) Length of expected is 3; length of actual is 32.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(161): (vcom-1272) Length of expected is 3; length of actual is 32.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(162): (vcom-1272) Length of expected is 3; length of actual is 32.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(158): (vcom-1319) Case statement choice (signal "imm_i") length 32 is not equal to required length 3.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(159): (vcom-1319) Case statement choice (signal "imm_s") length 32 is not equal to required length 3.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(160): (vcom-1319) Case statement choice (signal "imm_b") length 32 is not equal to required length 3.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(161): (vcom-1319) Case statement choice (signal "imm_u") length 32 is not equal to required length 3.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(162): (vcom-1319) Case statement choice (signal "imm_j") length 32 is not equal to required length 3.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(242): VHDL Compiler exiting
+# End time: 12:01:03 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 20, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:03:18 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture rtl of riscv_cpu
+# -- Loading package std_logic_textio
+# -- Loading entity fetch_unit
+# -- Loading entity control_unit
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(103): Ambiguous type in infix expression; reg_file_type or ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(103): (vcom-1583) Illegal type conversion from 'unknown' to 'ieee.NUMERIC_STD.SIGNED' (operand type is not known).
+# -- Loading entity ALU
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(86): (vcom-1272) Length of formal "Branch" is 3; length of actual is 2.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(179): VHDL Compiler exiting
+# End time: 12:03:18 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:05:02 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture rtl of riscv_cpu
+# -- Loading package std_logic_textio
+# -- Loading entity fetch_unit
+# -- Loading entity control_unit
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(103): Ambiguous type in infix expression; reg_file_type or ieee.std_logic_1164.STD_ULOGIC_VECTOR.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(103): (vcom-1583) Illegal type conversion from 'unknown' to 'ieee.NUMERIC_STD.SIGNED' (operand type is not known).
+# -- Loading entity ALU
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(86): (vcom-1272) Length of formal "Branch" is 3; length of actual is 2.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(178): VHDL Compiler exiting
+# End time: 12:05:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:19:02 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity alu
+# -- Compiling architecture rtl of alu
+# End time: 12:19:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# End time: 12:20:54 on Oct 26,2025, Elapsed time: 0:25:12
+# Errors: 0, Warnings: 6
+# Load canceled
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:21:02 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity alu
+# -- Compiling architecture rtl of alu
+# End time: 12:21:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:21:03 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity tb_alu
+# -- Compiling architecture sim of tb_alu
+# -- Loading entity alu
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(29): near "label": (vcom-1576) expecting IDENTIFIER.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(43): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(43): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(44): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(44): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(45): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(45): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(46): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(46): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(47): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(47): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(48): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(48): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(49): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(49): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(50): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(50): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(51): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(51): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(52): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(52): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(53): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(53): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(54): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(54): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(55): (vcom-1175) Declaration "step" is hidden in subprogram specification of same name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(55): (vcom-1136) Unknown identifier "step".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(59): near "process": (vcom-1576) expecting ';'.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd(59): VHDL Compiler exiting
+# End time: 12:21:03 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 28, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:22:07 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity tb_alu
+# -- Compiling architecture sim of tb_alu
+# -- Loading entity alu
+# End time: 12:22:07 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_alu
+# vsim -voptargs="+acc" work.tb_alu 
+# Start time: 12:22:15 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.control_pkg
+# Loading work.tb_alu(sim)#1
+# Loading work.alu(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_alu/A \
+sim:/tb_alu/B \
+sim:/tb_alu/Result \
+sim:/tb_alu/ALUOp \
+sim:/tb_alu/Zero
+run
+# ** Note: Running: ADD 5 + 3
+#    Time: 0 ns  Iteration: 0  Instance: /tb_alu
+# ** Note: Running: SUB 9 - 4
+#    Time: 100 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: AND F0F0F0F0 & 0F0F0F0F
+#    Time: 200 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: OR F0F0F0F0 | 0F0F0F0F
+#    Time: 300 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: XOR alternating bits
+#    Time: 400 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: SLT signed: -1 < 1
+#    Time: 500 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: SLT signed: +1 < -1
+#    Time: 600 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: SLTU unsigned: FFFFFFFF < 1
+#    Time: 700 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: SLTU unsigned: 1 < FFFFFFFF
+#    Time: 800 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: SLL 1 << 4
+#    Time: 900 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: SRL 0x10 >> 1
+#    Time: 1 us  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: SRA F0000000 >> 4
+#    Time: 1100 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: Running: PASSB LUI output B
+#    Time: 1200 ns  Iteration: 0  Instance: /tb_alu
+# Optimization canceled
+run
+# ** Note: Running: Zero flag check
+#    Time: 1300 ns  Iteration: 0  Instance: /tb_alu
+run
+# ** Note: All ALU steps done.
+#    Time: 1400 ns  Iteration: 0  Instance: /tb_alu
+quit -sim
+# End time: 12:27:50 on Oct 26,2025, Elapsed time: 0:05:35
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:28:38 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity tb_imm_gen
+# -- Compiling architecture sim of tb_imm_gen
+# End time: 12:28:38 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:28:41 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity imm_gen
+# -- Compiling architecture struct of imm_gen
+# End time: 12:28:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_imm_gen
+# vsim -voptargs="+acc" work.tb_imm_gen 
+# Start time: 12:28:50 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.control_pkg
+# Loading work.tb_imm_gen(sim)#1
+# Loading work.imm_gen(struct)#1
+add wave -position insertpoint  \
+sim:/tb_imm_gen/instr \
+sim:/tb_imm_gen/ImmSel \
+sim:/tb_imm_gen/imm_out
+run
+run
+run
+run
+run
+quit -sim
+# End time: 12:32:46 on Oct 26,2025, Elapsed time: 0:03:56
+# Errors: 0, Warnings: 1
+vsim -voptargs=+acc work.tb_imm_gen
+# vsim -voptargs="+acc" work.tb_imm_gen 
+# Start time: 12:32:50 on Oct 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.control_pkg
+# Loading work.tb_imm_gen(sim)#1
+# Loading work.imm_gen(struct)#1
+add wave -position insertpoint  \
+sim:/tb_imm_gen/instr \
+sim:/tb_imm_gen/ImmSel \
+sim:/tb_imm_gen/imm_out
+run
+run
+# Optimization canceled
+quit -sim
+# End time: 12:33:15 on Oct 26,2025, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:33:19 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity imm_gen
+# -- Compiling architecture struct of imm_gen
+# End time: 12:33:19 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:33:20 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity tb_imm_gen
+# -- Compiling architecture sim of tb_imm_gen
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd(26): near "label": (vcom-1576) expecting IDENTIFIER.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd(35): VHDL Compiler exiting
+# End time: 12:33:20 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:33:51 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity tb_imm_gen
+# -- Compiling architecture sim of tb_imm_gen
+# End time: 12:33:51 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_imm_gen
+# vsim -voptargs="+acc" work.tb_imm_gen 
+# Start time: 12:33:58 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.control_pkg
+# Loading work.tb_imm_gen(sim)#1
+# Loading work.imm_gen(struct)#1
+add wave -position insertpoint  \
+sim:/tb_imm_gen/instr \
+sim:/tb_imm_gen/ImmSel \
+sim:/tb_imm_gen/imm_out
+run
+# ** Note: PASS: I-type addi x1,x0,-4 -> FFFFFFFC
+#    Time: 100 ns  Iteration: 0  Instance: /tb_imm_gen
+run
+# ** Note: PASS: S-type sw x2,8(x3) -> 00000008
+#    Time: 200 ns  Iteration: 0  Instance: /tb_imm_gen
+run
+# ** Note: PASS: B-type beq x1,x2,-16 -> FFFFFFF0
+#    Time: 300 ns  Iteration: 0  Instance: /tb_imm_gen
+run
+# ** Note: PASS: U-type lui x1,0x12345 -> 12345000
+#    Time: 400 ns  Iteration: 0  Instance: /tb_imm_gen
+run
+# ** Note: PASS: J-type jal x1,32 -> 00000020
+#    Time: 500 ns  Iteration: 0  Instance: /tb_imm_gen
+# ** Note: IMM GEN tests complete.
+#    Time: 500 ns  Iteration: 0  Instance: /tb_imm_gen
+quit -sim
+# End time: 12:35:19 on Oct 26,2025, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:40:00 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture rtl of riscv_cpu
+# End time: 12:40:00 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:40:05 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture rtl of riscv_cpu
+# End time: 12:40:05 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:42:33 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# ** Warning: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd(7): (vcom-1615) Existing entity 'riscv_cpu' at /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(7) will be overwritten.
+# -- Compiling entity riscv_cpu
+# ** Warning: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd(14): (vcom-1615) Existing architecture 'riscv_cpu(rtl)' at /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(14) will be overwritten.
+# -- Compiling architecture rtl of riscv_cpu
+# End time: 12:42:33 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:43:39 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture rtl of riscv_cpu
+# End time: 12:43:39 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:43:41 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity data_mem
+# -- Compiling architecture rtl of data_mem
+# End time: 12:43:41 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:44:04 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_data_mem
+# -- Compiling architecture sim of tb_data_mem
+# -- Loading entity data_mem
+# End time: 12:44:04 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_data_mem
+# vsim -voptargs="+acc" work.tb_data_mem 
+# Start time: 12:44:10 on Oct 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_data_mem(sim)#1
+# Loading work.data_mem(rtl)#1
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:44:53 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_data_mem
+# -- Compiling architecture sim of tb_data_mem
+# -- Loading entity data_mem
+# End time: 12:44:53 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# End time: 12:45:04 on Oct 26,2025, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:45:08 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_data_mem
+# -- Compiling architecture sim of tb_data_mem
+# -- Loading entity data_mem
+# End time: 12:45:08 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_data_mem
+# vsim -voptargs="+acc" work.tb_data_mem 
+# Start time: 12:45:13 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_data_mem(sim)#1
+# Loading work.data_mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_data_mem/addr \
+sim:/tb_data_mem/clk \
+sim:/tb_data_mem/rdata \
+sim:/tb_data_mem/re \
+sim:/tb_data_mem/rst \
+sim:/tb_data_mem/sign \
+sim:/tb_data_mem/size \
+sim:/tb_data_mem/wdata \
+sim:/tb_data_mem/we
+# Load canceled
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 12:48:09 on Oct 26,2025, Elapsed time: 0:02:56
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:48:12 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_data_mem
+# -- Compiling architecture sim of tb_data_mem
+# -- Loading entity data_mem
+# End time: 12:48:12 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_data_mem
+# vsim -voptargs="+acc" work.tb_data_mem 
+# Start time: 12:48:18 on Oct 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_data_mem(sim)#1
+# Loading work.data_mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_data_mem/addr \
+sim:/tb_data_mem/clk \
+sim:/tb_data_mem/rdata \
+sim:/tb_data_mem/re \
+sim:/tb_data_mem/rst \
+sim:/tb_data_mem/sign \
+sim:/tb_data_mem/size \
+sim:/tb_data_mem/wdata \
+sim:/tb_data_mem/we
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 12:50:17 on Oct 26,2025, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:50:20 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_data_mem
+# -- Compiling architecture sim of tb_data_mem
+# -- Loading entity data_mem
+# End time: 12:50:20 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_data_mem
+# vsim -voptargs="+acc" work.tb_data_mem 
+# Start time: 12:50:25 on Oct 26,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_data_mem(sim)#1
+# Loading work.data_mem(rtl)#1
+add wave -position insertpoint  \
+sim:/tb_data_mem/addr \
+sim:/tb_data_mem/clk \
+sim:/tb_data_mem/rdata \
+sim:/tb_data_mem/read_en \
+sim:/tb_data_mem/rst \
+sim:/tb_data_mem/sign \
+sim:/tb_data_mem/size \
+sim:/tb_data_mem/wdata \
+sim:/tb_data_mem/write_en
+run
+run
+run
+run
+run
+# ** Note: READ @0x00000000 = DEADBEEF
+#    Time: 500 ns  Iteration: 0  Instance: /tb_data_mem
+run
+# ** Note: READ @0x00000004 = 12345678
+#    Time: 600 ns  Iteration: 0  Instance: /tb_data_mem
+run
+run
+# ** Failure: Simulation complete.
+#    Time: 800 ns  Iteration: 0  Process: /tb_data_mem/stim_proc File: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+# Break in Process stim_proc at /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd line 104
+quit -sim
+# End time: 12:53:36 on Oct 26,2025, Elapsed time: 0:03:11
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:56:51 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture structural of riscv_cpu
+# -- Loading package std_logic_textio
+# -- Loading entity fetch_unit
+# -- Loading entity control_unit
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(67): (vcom-1484) Unknown formal identifier "instr".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(68): (vcom-1484) Unknown formal identifier "zero".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(70): (vcom-1484) Unknown formal identifier "aluSel".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(71): (vcom-1484) Unknown formal identifier "aluSrc".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(75): (vcom-1484) Unknown formal identifier "wbSel".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(76): (vcom-1484) Unknown formal identifier "size".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(77): (vcom-1484) Unknown formal identifier "sign".
+# ** Error: (vcom-11) Could not find work.reg_file.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(87): (vcom-1195) Cannot find expanded name "work.reg_file".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(87): Unknown expanded name.
+# -- Loading entity imm_gen
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(106): (vcom-1484) Unknown formal identifier "imm".
+# -- Loading entity alu
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(121): (vcom-1484) Unknown formal identifier "alu_sel".
+# -- Loading entity data_mem
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): Illegal expanded name prefix ("RF" is not label of block, process, generate, or (for) loop statement).
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): (vcom-1195) Cannot find expanded name "RF.wdata".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): Illegal target for signal assignment.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): Unknown expanded name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(78): (vcom-1035) Formal port "opcode" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(78): (vcom-1035) Formal port "funct3" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(78): (vcom-1035) Formal port "funct7" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(107): (vcom-1035) Formal port "ImmSel" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(124): (vcom-1035) Formal port "ALUOp" has OPEN or no actual associated with it.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(164): VHDL Compiler exiting
+# End time: 12:56:51 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:56:58 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity alu
+# -- Compiling architecture rtl of alu
+# End time: 12:56:59 on Oct 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:00 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture structural of barrel_shifter
+# End time: 12:57:00 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:02 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package control_pkg
+# End time: 12:57:02 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:03 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity control_unit
+# -- Compiling architecture rtl of control_unit
+# End time: 12:57:03 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:04 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity data_mem
+# -- Compiling architecture rtl of data_mem
+# End time: 12:57:04 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:06 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package control_pkg
+# -- Compiling entity fetch_unit
+# -- Compiling architecture struct of fetch_unit
+# End time: 12:57:06 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:07 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity imm_gen
+# -- Compiling architecture struct of imm_gen
+# End time: 12:57:07 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:10 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.array32_pkg.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd(10): (vcom-1195) Cannot find expanded name "work.array32_pkg".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd(10): Unknown expanded name.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd(12): VHDL Compiler exiting
+# End time: 12:57:10 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/array32.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:16 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/array32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package array32_pkg
+# End time: 12:57:16 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:17 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package array32_pkg
+# -- Compiling entity RegFile
+# -- Compiling architecture mixed of RegFile
+# End time: 12:57:17 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:19 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture structural of riscv_cpu
+# -- Loading package std_logic_textio
+# -- Loading entity fetch_unit
+# -- Loading entity control_unit
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(67): (vcom-1484) Unknown formal identifier "instr".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(68): (vcom-1484) Unknown formal identifier "zero".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(70): (vcom-1484) Unknown formal identifier "aluSel".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(71): (vcom-1484) Unknown formal identifier "aluSrc".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(75): (vcom-1484) Unknown formal identifier "wbSel".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(76): (vcom-1484) Unknown formal identifier "size".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(77): (vcom-1484) Unknown formal identifier "sign".
+# ** Error: (vcom-11) Could not find work.reg_file.
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(87): (vcom-1195) Cannot find expanded name "work.reg_file".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(87): Unknown expanded name.
+# -- Loading entity imm_gen
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(106): (vcom-1484) Unknown formal identifier "imm".
+# -- Loading entity alu
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(121): (vcom-1484) Unknown formal identifier "alu_sel".
+# -- Loading entity data_mem
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): Illegal expanded name prefix ("RF" is not label of block, process, generate, or (for) loop statement).
+# ** Error (suppressible): /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): (vcom-1195) Cannot find expanded name "RF.wdata".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): Illegal target for signal assignment.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(154): Unknown expanded name.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(78): (vcom-1035) Formal port "opcode" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(78): (vcom-1035) Formal port "funct3" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(78): (vcom-1035) Formal port "funct7" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(107): (vcom-1035) Formal port "ImmSel" has OPEN or no actual associated with it.
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(124): (vcom-1035) Formal port "ALUOp" has OPEN or no actual associated with it.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(164): VHDL Compiler exiting
+# End time: 12:57:19 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:59:46 on Oct 26,2025
+# vcom -reportprogress 300 -work work /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package control_pkg
+# -- Compiling entity riscv_cpu
+# -- Compiling architecture rtl of riscv_cpu
+# -- Loading package std_logic_textio
+# -- Loading entity fetch_unit
+# -- Loading entity control_unit
+# -- Loading package array32_pkg
+# -- Loading entity RegFile
+# -- Loading entity imm_gen
+# -- Loading entity alu
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(161): (vcom-1484) Unknown formal identifier "ALUControl".
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(162): (vcom-1484) Unknown formal identifier "ALUOut".
+# -- Loading entity data_mem
+# ** Error: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(164): (vcom-1035) Formal port "ALUOp" has OPEN or no actual associated with it.
+# ** Note: /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd(232): VHDL Compiler exiting
+# End time: 12:59:46 on Oct 26,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0

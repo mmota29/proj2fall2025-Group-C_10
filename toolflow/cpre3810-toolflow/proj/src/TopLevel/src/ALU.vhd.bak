@@ -1,0 +1,99 @@
+--ALU.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ALU is
+	port (
+	A	: in std_logic_vector(31 downto 0);
+	B	: in std_logic_vector(31 downto 0);
+	ALUControl	: in std_logic_vector(3 downto 0);
+	ALUOut	: out std_logic_vector(31 downto 0);
+	zero	: out std_logic
+	);
+end ALU;
+
+architecture struct of ALU is
+	component barrel_shifter is
+	generic (
+		G_WIDTH : integer := 32
+	);
+	port (
+	data_in	: in std_logic_vector(G_WIDTH-1 downto 0);
+	shamt	: in std_logic_vector(4 downto 0);
+	dir	: in std_logic;
+	arith	: in std_logic;
+	data_out	: out std_logic_vector(G_WIDTH-1 downto 0)
+	);
+	end component;
+
+	signal shift_out	: std_logic_vector(31 downto 0);
+	signal dir_sig	: std_logic := '0';
+	signal arith_sig	: std_logic := '0';
+	signal result	: std_logic_vector(31 downto 0);
+	signal shamt	: integer range 0 to 31;
+
+begin
+
+	shifter_init: entity work.barrel_shifter
+	port map (
+		data_in => A,
+		shamt	=> B(4 downto 0),
+		dir	=> dir_sig,
+		arith	=> arith_sig,
+		data_out => shift_out
+		);
+
+
+	process(A, B, ALUControl, shift_out)
+	begin
+		dir_sig <= '0';
+		arith_sig <= '0';
+		shamt <= to_integer(unsigned(B(4 downto 0)));
+
+		case ALUControl is
+		when "0000" => -- ADD / ADDI
+			ALUOut <= std_logic_vector(signed(A) + signed(B));
+		when "0001" => -- SUB / SUBI
+			ALUOut <= std_logic_vector(signed(A) - signed(B));
+		when "0010" => -- SLT
+			if (signed(A) < signed(B)) then
+                    		ALUOut <= (others => '0');
+                    		ALUOut(0) <= '1';
+                	else
+				ALUOut <= (others => '0');
+			end if;
+		when "0011" => -- AND
+			ALUOut <= A and B;
+		when "0100" => -- OR
+			ALUOut <= A or B;
+		when "0101" => -- XOR
+			ALUOut <= A xor B;
+		when "0110" => -- NOR
+			ALUOut <= not (A or B);
+		when "0111" => -- SLL / SLLI
+			dir_sig <= '0';
+			arith_sig <= '0';
+			result <= shift_out;
+		when "1000" => -- SRL / SRLI
+			dir_sig <= '1';
+			arith_sig <= '0';
+			result <= shift_out;
+		when "1001" => -- SRA / SRAI
+			dir_sig <= '1';
+			arith_sig <= '1';
+			result <= shift_out;
+	
+		when others =>
+			result <= (others => '0');
+		end case;
+	
+		ALUOut <= result;
+		
+		if result = x"00000000" then
+			zero <= '1';
+		else
+			zero <= '0';
+		end if;
+	end process;
+end struct;

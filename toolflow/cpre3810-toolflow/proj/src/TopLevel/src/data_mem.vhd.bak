@@ -1,0 +1,293 @@
+--data_mem.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.control_pkg.all;
+
+entity riscv_cpu is
+  port (
+    clk : in std_logic;
+    rst : in std_logic
+  );
+end entity;
+
+architecture rtl of riscv_cpu is
+
+  -- component declarations (match your project components)
+  component fetch_unit
+    generic (START_PC : std_logic_vector(31 downto 0) := x"00000000");
+    port (
+      clk      : in std_logic;
+      rst      : in std_logic;
+      pcSel    : in std_logic_vector(1 downto 0);
+      branch_tgt : in std_logic_vector(31 downto 0);
+      jalr_tgt   : in std_logic_vector(31 downto 0);
+      jump_tgt   : in std_logic_vector(31 downto 0);
+      instr    : out std_logic_vector(31 downto 0);
+      pc       : out std_logic_vector(31 downto 0)
+    );
+  end component;
+
+  component control_unit
+    port (
+      opcode  : in  std_logic_vector(6 downto 0);
+      funct3  : in  std_logic_vector(2 downto 0);
+      funct7  : in  std_logic_vector(6 downto 0);
+
+      ASel    : out std_logic;
+      BSel    : out std_logic;
+      ImmSel  : out std_logic_vector(2 downto 0);
+      ALUOp   : out std_logic_vector(3 downto 0);
+
+      RegWrite: out std_logic;
+      MemRead : out std_logic;
+      MemWrite: out std_logic;
+      MemToReg: out std_logic_vector(1 downto 0);
+
+      LoadSize: out std_logic_vector(1 downto 0);
+      LoadSign: out std_logic;
+
+      Branch  : out std_logic_vector(2 downto 0);
+      Jump    : out std_logic;
+      Jalr    : out std_logic;
+      PCSel   : out std_logic_vector(1 downto 0);
+
+      Halt    : out std_logic
+    );
+  end component;
+
+  component imm_gen
+    port (
+      instr   : in  std_logic_vector(31 downto 0);
+      ImmSel  : in  std_logic_vector(2 downto 0);
+      imm_out : out std_logic_vector(31 downto 0)
+    );
+  end component;
+
+  component alu
+    port (
+      A      : in  std_logic_vector(31 downto 0);
+      B      : in  std_logic_vector(31 downto 0);
+      ALUOp  : in  std_logic_vector(3 downto 0);
+      Result : out std_logic_vector(31 downto 0);
+      Zero   : out std_logic
+    );
+  end component;
+
+  component data_mem
+    port (
+      clk       : in std_logic;
+      rst       : in std_logic;
+      addr      : in std_logic_vector(31 downto 0);
+      wdata     : in std_logic_vector(31 downto 0);
+      write_en  : in std_logic;
+      read_en   : in std_logic;
+      size      : in std_logic_vector(1 downto 0);
+      sign      : in std_logic;
+      rdata     : out std_logic_vector(31 downto 0)
+    );
+  end component;
+
+  component RegFile
+    port (
+      clk      : in std_logic;
+      rst      : in std_logic;
+      en       : in std_logic;
+      rs1_ad   : in std_logic_vector(4 downto 0);
+      rs2_ad   : in std_logic_vector(4 downto 0);
+      rd_ad    : in std_logic_vector(4 downto 0);
+      rd_data  : in std_logic_vector(31 downto 0);
+      rs1_data : out std_logic_vector(31 downto 0);
+      rs2_data : out std_logic_vector(31 downto 0);
+      reg_out  : out std_logic_vector(31 downto 0) -- placeholder type; unused
+    );
+  end component;
+
+  -- internal signals
+  signal instr    : std_logic_vector(31 downto 0);
+  signal pc       : std_logic_vector(31 downto 0);
+  signal imm      : std_logic_vector(31 downto 0);
+
+  signal rs1_addr, rs2_addr, rd_addr : std_logic_vector(4 downto 0);
+  signal rs1_data, rs2_data, wb_data  : std_logic_vector(31 downto 0);
+
+  signal alu_a, alu_b, alu_res : std_logic_vector(31 downto 0);
+  signal mem_rdata : std_logic_vector(31 downto 0);
+  signal alu_zero  : std_logic;
+
+  -- control signals from control_unit
+  signal ASel, BSel, RegWrite, MemRead, MemWrite, LoadSign, Jump, Jalr, Halt : std_logic;
+  signal ImmSel : std_logic_vector(2 downto 0);
+  signal ALUOp  : std_logic_vector(3 downto 0);
+  signal MemToReg : std_logic_vector(1 downto 0);
+  signal LoadSize : std_logic_vector(1 downto 0);
+  signal Branch  : std_logic_vector(2 downto 0);
+  signal PCSel_ctrl : std_logic_vector(1 downto 0);
+
+  -- final PC select determined at runtime (branch decision)
+  signal PCSel_final : std_logic_vector(1 downto 0);
+
+  -- branch/jump targets
+  signal branch_tgt, jalr_tgt, jump_tgt : std_logic_vector(31 downto 0);
+
+begin
+
+  -----------------------------------------------------------
+  -- FETCH: instruction memory (fetch_unit reads instruction.hex)
+  -----------------------------------------------------------
+  U_FETCH : fetch_unit
+    port map (
+      clk => clk,
+      rst => rst,
+      pcSel => PCSel_final,
+      branch_tgt => branch_tgt,
+      jalr_tgt   => jalr_tgt,
+      jump_tgt   => jump_tgt,
+      instr => instr,
+      pc => pc
+    );
+
+  -----------------------------------------------------------
+  -- DECODE
+  -----------------------------------------------------------
+  rs1_addr <= instr(19 downto 15);
+  rs2_addr <= instr(24 downto 20);
+  rd_addr  <= instr(11 downto 7);
+
+  U_CTRL : control_unit
+    port map (
+      opcode  => instr(6 downto 0),
+      funct3  => instr(14 downto 12),
+      funct7  => instr(31 downto 25),
+
+      ASel    => ASel,
+      BSel    => BSel,
+      ImmSel  => ImmSel,
+      ALUOp   => ALUOp,
+
+      RegWrite=> RegWrite,
+      MemRead => MemRead,
+      MemWrite=> MemWrite,
+      MemToReg=> MemToReg,
+
+      LoadSize=> LoadSize,
+      LoadSign=> LoadSign,
+
+      Branch  => Branch,
+      Jump    => Jump,
+      Jalr    => Jalr,
+      PCSel   => PCSel_ctrl,
+
+      Halt    => Halt
+    );
+
+  -----------------------------------------------------------
+  -- REGISTER FILE
+  -----------------------------------------------------------
+  U_REGS : RegFile
+    port map (
+      clk => clk,
+      rst => rst,
+      en  => RegWrite,
+      rs1_ad => rs1_addr,
+      rs2_ad => rs2_addr,
+      rd_ad  => rd_addr,
+      rd_data => wb_data,
+      rs1_data => rs1_data,
+      rs2_data => rs2_data,
+      reg_out => open
+    );
+
+  -----------------------------------------------------------
+  -- IMM GEN
+  -----------------------------------------------------------
+  U_IMM : imm_gen
+    port map (
+      instr => instr,
+      ImmSel => ImmSel,
+      imm_out => imm
+    );
+
+  -----------------------------------------------------------
+  -- ALU inputs and ALU
+  -----------------------------------------------------------
+  alu_a <= pc when ASel = '1' else rs1_data;
+  alu_b <= imm when BSel = '1' else rs2_data;
+
+  U_ALU : alu
+    port map (
+      A => alu_a,
+      B => alu_b,
+      ALUOp => ALUOp,
+      Result => alu_res,
+      Zero => alu_zero
+    );
+
+  -----------------------------------------------------------
+  -- MEMORY (data memory)
+  -----------------------------------------------------------
+  U_DMEM : data_mem
+    port map (
+      clk      => clk,
+      rst      => rst,
+      addr     => alu_res,
+      wdata    => rs2_data,
+      write_en => MemWrite,
+      read_en  => MemRead,
+      size     => LoadSize,
+      sign     => LoadSign,
+      rdata    => mem_rdata
+    );
+
+  -----------------------------------------------------------
+  -- WRITEBACK MUX
+  -----------------------------------------------------------
+  wb_data <= alu_res when MemToReg = M2R_ALU else
+             mem_rdata when MemToReg = M2R_MEM else
+             std_logic_vector(unsigned(pc) + 4) when MemToReg = M2R_PC4 else
+             (others => '0');
+
+  -----------------------------------------------------------
+  -- Compute targets for PC selection
+  -----------------------------------------------------------
+  branch_tgt <= std_logic_vector(unsigned(pc) + unsigned(imm));
+  jump_tgt   <= std_logic_vector(unsigned(pc) + unsigned(imm));
+  jalr_tgt   <= std_logic_vector( (unsigned(rs1_data) + unsigned(imm)) and x"FFFFFFFE");
+
+  -----------------------------------------------------------
+  -- Branch decision logic -> PCSel_final
+  -- Uses Branch (type) to evaluate whether to take a branch
+  -----------------------------------------------------------
+  process(Branch, rs1_data, rs2_data, alu_zero, Jump, Jalr)
+    variable s1, s2 : signed(31 downto 0);
+    variable u1, u2 : unsigned(31 downto 0);
+    variable take   : std_logic := '0';
+  begin
+    take := '0';
+    s1 := signed(rs1_data);
+    s2 := signed(rs2_data);
+    u1 := unsigned(rs1_data);
+    u2 := unsigned(rs2_data);
+
+    case Branch is
+      when BR_BEQ  => if rs1_data = rs2_data then take := '1'; end if;
+      when BR_BNE  => if rs1_data /= rs2_data then take := '1'; end if;
+      when BR_BLT  => if s1 < s2 then take := '1'; end if;
+      when BR_BGE  => if s1 >= s2 then take := '1'; end if;
+      when BR_BLTU => if u1 < u2 then take := '1'; end if;
+      when BR_BGEU => if u1 >= u2 then take := '1'; end if;
+      when others  => take := '0';
+    end case;
+
+    if take = '1' then
+      PCSel_final <= PC_BR;
+    elsif Jump = '1' then
+      PCSel_final <= PC_JAL;
+    elsif Jalr = '1' then
+      PCSel_final <= PC_JALR;
+    else
+      PCSel_final <= PC_PC4;
+    end if;
+  end process;
+
+end architecture;

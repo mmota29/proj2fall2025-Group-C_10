@@ -1,0 +1,68 @@
+--FirstDatapath.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity FirstDatapath is
+	port (
+	clk	: in std_logic;
+	rst	: in std_logic;
+	en	: in std_logic;
+	sel	: in std_logic;
+	ALUSrc	: in std_logic;
+	rs1_ad	: in std_logic_vector(4 downto 0);
+	rs2_ad	: in std_logic_vector(4 downto 0);
+	rd_ad	: in std_logic_vector(4 downto 0);
+	rd_data	: out std_logic_vector(31 downto 0);
+	imm	: in std_logic_vector(31 downto 0);
+	rs1_data	: out std_logic_vector(31 downto 0);
+	rs2_data	: out std_logic_vector(31 downto 0);
+	ALUout		: out std_logic_vector(31 downto 0)
+	);
+end FirstDatapath;
+
+architecture datapath of FirstDatapath is
+	signal s_rs1 : std_logic_vector(31 downto 0);
+	signal s_rs2 : std_logic_vector(31 downto 0);
+	signal s_mux : std_logic_vector(31 downto 0);
+	signal s_ALUout : std_logic_vector(31 downto 0);
+
+begin
+	DUT0: entity work.RegFile
+		port map (
+		clk => clk,
+		rst => rst,
+		en => en,
+		rs1_ad => rs1_ad,
+		rs2_ad => rs2_ad,
+		rd_ad => rd_ad,
+		rd_data => rd_data,
+		rs1_data => s_rs1,
+		rs2_data => s_rs2
+		);
+
+	process(s_rs2, imm, ALUSrc)
+	begin
+
+		if ALUSrc = '0' then
+			s_mux <= s_rs2;
+		else
+			s_mux <= imm;
+		end if;
+	end process;
+
+	process(s_rs1, s_mux, sel)
+	begin
+
+		if sel = '0' then
+			s_ALUout <= std_logic_vector(signed(s_rs1) + signed(s_mux));
+		else
+			s_ALUout <= std_logic_vector(signed(s_rs1) - signed(s_mux));
+		end if;
+	end process;
+
+	ALUout <= s_ALUout;
+	rs1_data <= s_rs1;
+	rs2_data <= s_rs2;
+
+end datapath;

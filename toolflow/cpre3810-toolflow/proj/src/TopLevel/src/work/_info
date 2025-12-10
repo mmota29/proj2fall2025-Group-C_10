@@ -1,0 +1,878 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+Z2 !s12c _opt
+R1
+R2
+R1
+Z3 !s12c _opt2
+R1
+R0
+R1
+R2
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+!s11e vcom 2025.1_2 2025.04, Apr  7 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z4 d/home/mmota29/Desktop/proj1fall2025
+T_opt
+!s110 1761500038
+V1E>kH_H:AN?DS@<b@zo?N3
+04 10 3 work tb_imm_gen sim 1
+=1-000ae431a4f1-68fe5b86-66d27-48d1
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+Z9 o-quiet -auto_acc_if_foreign -work work +acc
+Z10 tCvgOpt 0
+n@_opt
+Z11 OL;O;2025.1_2;82
+R4
+T_opt1
+!s110 1761501026
+V0]P:9H`2?62S4mkc8]H=I0
+04 11 3 work tb_data_mem sim 1
+=1-000ae431a4f1-68fe5f62-128ec-50ae
+R1
+R5
+R6
+R7
+R8
+R9
+R10
+n@_opt1
+R11
+R4
+T_opt2
+!s110 1761499335
+VI3`Omei7nQ90ZdAZXQJm93
+04 6 3 work tb_alu sim 1
+=1-000ae431a4f1-68fe58c7-7eece-4342
+R1
+R5
+R6
+R7
+R8
+R9
+R10
+n@_opt2
+R11
+R4
+Ealu
+Z12 w1761499139
+Z13 DPx4 work 11 control_pkg 0 22 i1;:TU<RWXJX@n^>Z;cZA3
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 88
+Z17 d/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src
+Z18 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+Z19 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd
+l0
+L7 1
+V7UBeSjc:<0Db:mM<bhFTh3
+!s100 H6RGcF<NS65E_DJ3nKjPo0
+Z20 OL;C;2025.1_2;82
+33
+Z21 !s110 1761501419
+!i10b 1
+Z22 !s108 1761501418.000000
+Z23 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd|
+Z24 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/ALU.vhd|
+!i113 0
+Z25 o-work work
+Z26 tExplicit 1 NoCoverage 1 CvgOpt 0
+Artl
+R13
+R14
+R15
+R16
+Z27 DEx4 work 3 alu 0 22 7UBeSjc:<0Db:mM<bhFTh3
+!i122 88
+l21
+L17 65
+VU5YW2dP_EZ7<SGh6I]BD51
+!s100 [b=M42d_iCRYe?1mzIb>^3
+R20
+33
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R25
+R26
+Astruct
+Z28 DEx4 work 14 barrel_shifter 0 22 STg@?lj@3L_S]jVARME@H1
+R14
+R15
+R16
+Z29 DEx4 work 3 alu 0 22 0bSaAZ]X<M7WhFCf]kI3U1
+!i122 54
+l36
+L16 84
+V:fXB]I;S8NHjNkZdNH`]h2
+!s100 fUi=NOH398^DQ7HKVn?nI3
+R20
+33
+!s110 1761497020
+!i10b 1
+!s108 1761497020.000000
+R23
+R24
+!i113 0
+R25
+R26
+w1761497019
+Parray32_pkg
+R15
+R16
+!i122 95
+w1759873374
+R17
+8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/array32.vhd
+F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/array32.vhd
+l0
+L5 4
+VLCHje53Lf3]^jBTG?>kFH1
+!s100 JeLcCKH`@>c4P0QOfQF6`3
+R20
+33
+!s110 1761501436
+!i10b 1
+!s108 1761501436.000000
+!s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/array32.vhd|
+!s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/array32.vhd|
+!i113 0
+R25
+R26
+Ebarrel_shifter
+Z30 w1761496788
+R14
+R15
+R16
+!i122 89
+R17
+Z31 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+Z32 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd
+l0
+L5 1
+VSTg@?lj@3L_S]jVARME@H1
+!s100 em78bFh`MXnWkzo=z^O>>2
+R20
+33
+Z33 !s110 1761501420
+!i10b 1
+Z34 !s108 1761501420.000000
+Z35 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd|
+Z36 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/barrel_shifter.vhd|
+!i113 0
+R25
+R26
+Astructural
+R14
+R15
+R16
+R28
+!i122 89
+l29
+L15 112
+V<>@B^>`jOK52_]b]k:_S;1
+!s100 5RAZnDE1K?jeS36YF>Ff[3
+R20
+33
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 0
+R25
+R26
+Pcontrol_pkg
+R14
+R15
+R16
+!i122 90
+w1760902477
+R17
+8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd
+F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd
+l0
+L5 60
+Vi1;:TU<RWXJX@n^>Z;cZA3
+!s100 fiG9W6UFYc?fYoL2UAdEJ1
+R20
+33
+!s110 1761501422
+!i10b 1
+!s108 1761501422.000000
+!s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd|
+!s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_pkg.vhd|
+!i113 0
+R25
+R26
+Econtrol_unit
+Z37 w1761154535
+R13
+R14
+R15
+R16
+!i122 91
+R17
+Z38 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd
+Z39 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd
+l0
+L6 1
+V>LXBTJFc@kIc^8^ne?HMG3
+!s100 dQd]fJk`5zPSSfnCmd?dG2
+R20
+33
+Z40 !s110 1761501423
+!i10b 1
+Z41 !s108 1761501423.000000
+Z42 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd|
+Z43 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/control_unit.vhd|
+!i113 0
+R25
+R26
+Artl
+R13
+R14
+R15
+R16
+DEx4 work 12 control_unit 0 22 >LXBTJFc@kIc^8^ne?HMG3
+!i122 91
+l35
+L34 146
+ViP@fPj34DNl;9CR`?WBhk3
+!s100 Kj:68IWhNgH:GjI0=DQol2
+R20
+33
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 0
+R25
+R26
+Edata_mem
+Z44 w1761500613
+R14
+R15
+R16
+!i122 92
+R17
+Z45 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd
+Z46 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd
+l0
+L6 1
+VQNa=jObggSNE0>`1XK8jn2
+!s100 BFQE^dm3i[[BIBQnAD;Aj2
+R20
+33
+Z47 !s110 1761501424
+!i10b 1
+Z48 !s108 1761501424.000000
+Z49 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd|
+Z50 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/data_mem.vhd|
+!i113 0
+R25
+R26
+Artl
+R14
+R15
+R16
+Z51 DEx4 work 8 data_mem 0 22 QNa=jObggSNE0>`1XK8jn2
+!i122 92
+l28
+L20 90
+V?]2U2;bPo1PNGf=`O;KzL3
+!s100 >oYPB7DjRR>SczUG;]K0I1
+R20
+33
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 0
+R25
+R26
+Efetch_unit
+Z52 w1761160229
+R13
+Z53 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R14
+R15
+R16
+!i122 93
+R17
+Z54 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd
+Z55 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd
+l0
+L9 1
+VCIHbZ[;89X[M<<ANJFPRC2
+!s100 Fgg]OCW8>]0BS4E]kL@4S1
+R20
+33
+Z56 !s110 1761501426
+!i10b 1
+Z57 !s108 1761501426.000000
+Z58 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd|
+Z59 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/fetch_unit.vhd|
+!i113 0
+R25
+R26
+Astruct
+R13
+R53
+R14
+R15
+R16
+Z60 DEx4 work 10 fetch_unit 0 22 CIHbZ[;89X[M<<ANJFPRC2
+!i122 93
+l54
+L26 56
+ViiIP@5P8YYe@]zLj=GToQ0
+!s100 `90F7VUZjS0K=o7;LMgV?0
+R20
+33
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 0
+R25
+R26
+Eimm_gen
+Z61 w1761499663
+R13
+R14
+R15
+R16
+!i122 94
+R17
+Z62 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd
+Z63 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd
+l0
+L7 1
+VQLSBjj<]GeBF_Fl`R3BiX2
+!s100 5mVDd]bE5YJ4a1O77K2M20
+R20
+33
+Z64 !s110 1761501427
+!i10b 1
+Z65 !s108 1761501427.000000
+Z66 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd|
+Z67 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/imm_gen.vhd|
+!i113 0
+R25
+R26
+Astruct
+R13
+R14
+R15
+R16
+DEx4 work 7 imm_gen 0 22 QLSBjj<]GeBF_Fl`R3BiX2
+!i122 94
+l16
+L15 36
+V:AlX^CJAbDn28nRdBB59n0
+!s100 c=Fhc^2=?hAofL:@V>b?X2
+R20
+33
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 0
+R25
+R26
+Eregfile
+Z68 w1759874539
+Z69 DPx4 work 11 array32_pkg 0 22 LCHje53Lf3]^jBTG?>kFH1
+R14
+R15
+R16
+!i122 96
+R17
+Z70 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd
+Z71 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd
+l0
+L12 1
+V6TLk;HnKkSMWYi5;81GOA2
+!s100 ^8EDCFOV4zCb]DL^k9j@j3
+R20
+33
+Z72 !s110 1761501437
+!i10b 1
+Z73 !s108 1761501437.000000
+Z74 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd|
+Z75 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/RegFile.vhd|
+!i113 0
+R25
+R26
+Amixed
+R69
+R14
+R15
+R16
+DEx4 work 7 regfile 0 22 6TLk;HnKkSMWYi5;81GOA2
+!i122 96
+l33
+L29 26
+VAb3KAeim4k7g:3]6kgb8J1
+!s100 XlB1hHzb8]1:HJSJblR8S1
+R20
+33
+R72
+!i10b 1
+R73
+R74
+R75
+!i113 0
+R25
+R26
+Eriscv_cpu
+Z76 w1761501582
+R13
+R14
+R15
+R16
+!i122 98
+R17
+Z77 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+Z78 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd
+l0
+L7 1
+VU[^fD<?V^ambAKQbR^EiQ3
+!s100 76Nc@Jh0[KS:EU1F=c@:=2
+R20
+33
+!s110 1761501586
+!i10b 1
+!s108 1761501586.000000
+Z79 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd|
+Z80 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/riscv_cpu.vhd|
+!i113 0
+R25
+R26
+Artl
+R13
+R14
+R15
+R16
+DEx4 work 9 riscv_cpu 0 22 cJD^aE?AzB<TTjL]_TWCW2
+!i122 80
+l133
+L14 280
+VI?GTZm9LTRCzBkm523NFI2
+!s100 XD5eHHn:5L;;FaOK;D7Mj0
+R20
+33
+!s110 1761500619
+!i10b 1
+!s108 1761500619.000000
+R79
+R80
+!i113 0
+R25
+R26
+Astruct
+R29
+R14
+R15
+R16
+Z81 DEx4 work 9 riscv_cpu 0 22 Y@^nAnhA1__^U4517^9IZ3
+!i122 63
+l61
+L13 164
+Vi@6ChF0Fj:[c59j_]5KCf0
+!s100 :IQK90NMgBI2E:CXKj3?T3
+R20
+33
+!s110 1761497709
+!i10b 1
+!s108 1761497709.000000
+R79
+R80
+!i113 0
+R25
+R26
+w1761498058
+Etb_alu
+Z82 w1761499326
+R13
+R14
+R15
+R16
+!i122 71
+R17
+Z83 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd
+Z84 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd
+l0
+L7 1
+Vc<f1BQY:fKHfE5hUR:aJa2
+!s100 e]II^h]?>beTYHS<WQh<L2
+R20
+33
+Z85 !s110 1761499327
+!i10b 1
+Z86 !s108 1761499327.000000
+Z87 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd|
+Z88 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_ALU.vhd|
+!i113 0
+R25
+R26
+Asim
+R27
+R13
+R14
+R15
+R16
+DEx4 work 6 tb_alu 0 22 c<f1BQY:fKHfE5hUR:aJa2
+!i122 71
+l14
+L10 51
+Vao`f8U[^e2O1d<_e>bHLM3
+!s100 e476POVcXZdiMDH24>>Vk0
+R20
+33
+R85
+!i10b 1
+R86
+R87
+R88
+!i113 0
+R25
+R26
+Etb_data_mem
+Z89 w1761501014
+R14
+R15
+R16
+!i122 86
+R17
+Z90 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+Z91 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd
+l0
+L6 1
+V3:NY=U3aaa0d7^>Z?6Cc=2
+!s100 WTS5Uin:c2lHnQJ5LmMeR3
+R20
+33
+Z92 !s110 1761501020
+!i10b 1
+Z93 !s108 1761501020.000000
+Z94 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd|
+Z95 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_data_mem.vhd|
+!i113 0
+R25
+R26
+Asim
+R51
+R14
+R15
+R16
+DEx4 work 11 tb_data_mem 0 22 3:NY=U3aaa0d7^>Z?6Cc=2
+!i122 86
+l22
+L9 99
+V6`XC_CaFT[LAlSgHmViWG0
+!s100 odaFzUbRJTn=i1Tbgk^oD2
+R20
+33
+R92
+!i10b 1
+R93
+R94
+R95
+!i113 0
+R25
+R26
+Etb_dffg
+Z96 w1756242071
+R15
+R16
+!i122 20
+R17
+Z97 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_dffg.vhd
+Z98 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_dffg.vhd
+l0
+L23 1
+VSSC^J]0Tbi4IKdJklGj172
+!s100 _@1Y`b4>C@@3dFKeCkFbz1
+R20
+33
+Z99 !s110 1761159346
+!i10b 1
+Z100 !s108 1761159346.000000
+Z101 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_dffg.vhd|
+Z102 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_dffg.vhd|
+!i113 0
+R25
+R26
+Abehavior
+R15
+R16
+DEx4 work 7 tb_dffg 0 22 SSC^J]0Tbi4IKdJklGj172
+!i122 20
+l45
+L27 75
+VgbfUJeh5_oM:QXj3Z?[BG0
+!s100 McQ;1U@Ti8TCBh>42ldW82
+R20
+33
+R99
+!i10b 1
+R100
+R101
+R102
+!i113 0
+R25
+R26
+Etb_fetch_unit
+Z103 w1761159330
+R13
+R14
+R15
+R16
+!i122 32
+R17
+Z104 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_fetch_unit.vhd
+Z105 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_fetch_unit.vhd
+l0
+L7 1
+V3HYVV^d`[H@G65<?HK58k2
+!s100 >AoO^zNALaMF[ISf<HH2I1
+R20
+33
+Z106 !s110 1761159964
+!i10b 1
+Z107 !s108 1761159964.000000
+Z108 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_fetch_unit.vhd|
+Z109 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_fetch_unit.vhd|
+!i113 0
+R25
+R26
+Asim
+R53
+R60
+R13
+R14
+R15
+R16
+DEx4 work 13 tb_fetch_unit 0 22 3HYVV^d`[H@G65<?HK58k2
+!i122 32
+l23
+L10 47
+V9NJ3JMFodCE<_1ZcO=XX_1
+!s100 [lTRF:N=225_OW62H]]O@3
+R20
+33
+R106
+!i10b 1
+R107
+R108
+R109
+!i113 0
+R25
+R26
+Etb_imm_gen
+Z110 w1761500030
+R13
+R14
+R15
+R16
+!i122 76
+R17
+Z111 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd
+Z112 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd
+l0
+L7 1
+Vgj:Mm0l^H8R?ooQUh]OlD3
+!s100 HggW<EJ6Ij2B>an7BFfZ@1
+R20
+33
+Z113 !s110 1761500031
+!i10b 1
+Z114 !s108 1761500031.000000
+Z115 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd|
+Z116 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_imm_gen.vhd|
+!i113 0
+R25
+R26
+Asim
+R13
+R14
+R15
+R16
+DEx4 work 10 tb_imm_gen 0 22 gj:Mm0l^H8R?ooQUh]OlD3
+!i122 76
+l22
+L10 46
+V82YiP=JB3ln1_l`PDc2>D0
+!s100 ]YQJL17>]0X^]69[M>F3L0
+R20
+33
+R113
+!i10b 1
+R114
+R115
+R116
+!i113 0
+R25
+R26
+Etb_riscv
+Z117 w1761496458
+R14
+R15
+R16
+!i122 50
+R17
+Z118 8/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd
+Z119 F/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd
+l0
+L6 1
+V>V`D9kAaZXUJOLZVS9R4k1
+!s100 ?egkb5JmI??AnA]Ym4TVC0
+R20
+33
+Z120 !s110 1761496809
+!i10b 1
+Z121 !s108 1761496809.000000
+Z122 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd|
+Z123 !s107 /home/gbaker05/CPRE381/QuestaSim/Project-Group-C_10/proj/src/tb_riscv_cpu.vhd|
+!i113 0
+R25
+R26
+Asim
+R14
+R15
+R16
+DEx4 work 8 tb_riscv 0 22 >V`D9kAaZXUJOLZVS9R4k1
+!i122 50
+l20
+Z124 L9 34
+VbLe=AobX_@GLYOCDASblG2
+!s100 cWSA?0A_O8M;<H3To11K=0
+R20
+33
+R120
+!i10b 1
+R121
+R122
+R123
+!i113 0
+R25
+R26
+Etb_riscv_cpu
+Z125 w1761497732
+R14
+R15
+R16
+!i122 64
+R17
+R118
+R119
+l0
+L6 1
+VWG;RQV@1k8779JXW64SbP3
+!s100 COIFOLzoe[;BX28m89HEM1
+R20
+33
+Z126 !s110 1761497733
+!i10b 1
+Z127 !s108 1761497733.000000
+R122
+R123
+!i113 0
+R25
+R26
+Atb
+R81
+R14
+R15
+R16
+DEx4 work 12 tb_riscv_cpu 0 22 WG;RQV@1k8779JXW64SbP3
+!i122 64
+l13
+L9 49
+VM[O<g?i@83GkVA0^`Ioa_3
+!s100 bSoVPN75iWf@^ZdA7I=iQ1
+R20
+33
+R126
+!i10b 1
+R127
+R122
+R123
+!i113 0
+R25
+R26
+Asim
+R14
+R15
+R16
+DEx4 work 12 tb_riscv_cpu 0 22 XkLi3E[EIUMi2H>SYFYoB1
+!i122 60
+l20
+R124
+V@Nz65QIE:36kCn5Oi3ihB1
+!s100 V1<`81OXBE6O_D5b20Z=d2
+R20
+33
+!s110 1761497034
+!i10b 1
+!s108 1761497034.000000
+R122
+R123
+!i113 0
+R25
+R26
+w1761496815

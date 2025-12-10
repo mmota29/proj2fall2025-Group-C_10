@@ -1,0 +1,23 @@
+--extender_12to32.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity extender_12to32 is
+	port (
+	imm12	: in std_logic_vector(11 downto 0);
+	sign_sel 	: in std_logic; -- chooses which extender
+	imm32	: out std_logic_vector(31 downto 0)
+	);
+end extender_12to32;
+
+architecture struct of extender_12to32 is
+begin
+process(imm12, sign_sel)
+begin
+	if sign_sel = '1' then
+		imm32 <= (19 downto 0 => imm12(11)) & imm12; -- sign extender, puts most sig. bit of input 20 times to fill upper 20.
+	else
+		imm32 <= (31 downto 12 => '0') & imm12; -- zero extender, makes upper 20 all 0s.
+	end if;
+end process;
+end struct;

@@ -1,0 +1,372 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath
+T_opt
+!s110 1759891789
+VT=<>D8g1MaCTF7cmaAWe]3
+04 17 9 work tb_seconddatapath datapath2 1
+=1-000ae431a4f1-68e5d14d-ac81d-bce6
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2025.1_2;82
+Eaddsub
+Z2 w1757387331
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 8
+R1
+Z6 8/home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd
+Z7 F/home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd
+l0
+Z8 L11 1
+VeYE5mNDENbBA30:2Sc<::2
+!s100 Gz:aIaX4zdYe4`FUkKi@>3
+Z9 OL;C;2025.1_2;82
+32
+Z10 !s110 1759113023
+!i10b 1
+Z11 !s108 1759113023.000000
+Z12 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd|
+Z13 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/AddSub.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Adataflow
+R3
+R4
+R5
+DEx4 work 6 addsub 0 22 eYE5mNDENbBA30:2Sc<::2
+!i122 8
+l30
+L24 21
+VMmSmd5lA[hilfXNH8jTVG2
+!s100 OG?cY0V7<?><ab;AknRck0
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Edecoder5to32
+Z16 w1758558298
+R4
+R5
+!i122 4
+R1
+Z17 8/home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd
+Z18 F/home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd
+l0
+L5 1
+V1@F6I291PmUac[kOMm@K93
+!s100 K2RH>JE5f]BYnJTX<Y9lZ0
+R9
+32
+Z19 !s110 1759112971
+!i10b 1
+Z20 !s108 1759112971.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd|
+Z22 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/decoder5to32.vhd|
+!i113 0
+R14
+R15
+Astruct
+R4
+R5
+DEx4 work 12 decoder5to32 0 22 1@F6I291PmUac[kOMm@K93
+!i122 4
+l14
+L13 37
+V6E?WF@OF4ZOOZZMV26g;M1
+!s100 `De2`[P2D67`f=nW?8nCU2
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R14
+R15
+Eextender_12to32
+Z23 w1759109392
+R4
+R5
+!i122 5
+R1
+Z24 8/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd
+Z25 F/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd
+l0
+L5 1
+VUN=@QTbmCNP9@D;Fak=DU2
+!s100 CW_KcDjI18fPG1I;BmO@a1
+R9
+32
+Z26 !s110 1759112984
+!i10b 1
+Z27 !s108 1759112984.000000
+Z28 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd|
+Z29 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/Extenders/extender_12to32.vhd|
+!i113 0
+R14
+R15
+Astruct
+R4
+R5
+Z30 DEx4 work 15 extender_12to32 0 22 UN=@QTbmCNP9@D;Fak=DU2
+!i122 5
+l14
+L13 11
+VUEfIfZN;oRkl_PMJHZ4IU1
+!s100 hin6:aV8lj7OW`R0e5S001
+R9
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R14
+R15
+Emem
+Z31 w1756242071
+R3
+R4
+R5
+!i122 15
+R1
+Z32 8/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/mem.vhd
+Z33 F/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R9
+32
+Z34 !s110 1759891782
+!i10b 1
+Z35 !s108 1759891782.000000
+Z36 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/mem.vhd|
+Z37 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/mem.vhd|
+!i113 0
+R14
+R15
+Artl
+R3
+R4
+R5
+Z38 DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 15
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R9
+32
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 0
+R14
+R15
+Eregfile
+Z39 w1758569545
+R3
+R4
+R5
+!i122 3
+R1
+Z40 8/home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd
+Z41 F/home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd
+l0
+R8
+VJCR[Z]h5AaFHQgO]eoCHW1
+!s100 hMUYNb[MXAzTPN_BYJ`ME2
+R9
+32
+Z42 !s110 1759112970
+!i10b 1
+Z43 !s108 1759112970.000000
+Z44 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd|
+Z45 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/RegFile.vhd|
+!i113 0
+R14
+R15
+Amixed
+R3
+R4
+R5
+Z46 DEx4 work 7 regfile 0 22 JCR[Z]h5AaFHQgO]eoCHW1
+!i122 3
+l33
+L26 27
+VClb0d2;z[^gBYjQKdZgYa3
+!s100 AcRPJc24Od_CHoZOT4^Ph1
+R9
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R14
+R15
+Eseconddatapath
+Z47 w1759888323
+R3
+R4
+R5
+!i122 11
+R1
+Z48 8/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd
+Z49 F/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd
+l0
+L6 1
+V_MTZm4mkWC;hA8;`^el1n3
+!s100 g>EAnlL1ca_WKW87`T3Ic1
+R9
+32
+Z50 !s110 1759891772
+!i10b 1
+Z51 !s108 1759891771.000000
+Z52 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd|
+Z53 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/SecondDatapath.vhd|
+!i113 0
+R14
+R15
+Astruct
+R38
+R46
+R30
+R3
+R4
+R5
+Z54 DEx4 work 14 seconddatapath 0 22 _MTZm4mkWC;hA8;`^el1n3
+!i122 11
+l35
+L25 83
+V8oFHfOMM7<`6S9j5RZ5l]0
+!s100 eHRFF423e?<QLWf<NZa^;1
+R9
+32
+R50
+!i10b 1
+R51
+R52
+R53
+!i113 0
+R14
+R15
+Etb_dmem
+Z55 w1759885919
+R3
+R4
+R5
+!i122 14
+R1
+Z56 8/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_dmem.vhd
+Z57 F/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_dmem.vhd
+l0
+L6 1
+Vi_UDX@2jode[f3[GlGICi1
+!s100 ^OAJzL@cWE1lJa460C1Mm0
+R9
+32
+Z58 !s110 1759891780
+!i10b 1
+Z59 !s108 1759891780.000000
+Z60 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_dmem.vhd|
+Z61 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_dmem.vhd|
+!i113 0
+R14
+R15
+Astruct
+R38
+R3
+R4
+R5
+DEx4 work 7 tb_dmem 0 22 i_UDX@2jode[f3[GlGICi1
+!i122 14
+l22
+L9 70
+VPkZYKE_@><[6UoI@R8;Ah0
+!s100 Ae@eSkb2`QDj25eG;dCdB2
+R9
+32
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R14
+R15
+Etb_seconddatapath
+Z62 w1759891265
+R3
+R4
+R5
+!i122 12
+R1
+Z63 8/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_SecondDatapath.vhd
+Z64 F/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_SecondDatapath.vhd
+l0
+L6 1
+VjH<6hRKV;alWF]0Sl?K8_0
+!s100 Nk9FgF=K1eNk@ig=h@0mh2
+R9
+32
+Z65 !s110 1759891773
+!i10b 1
+Z66 !s108 1759891773.000000
+Z67 !s90 -reportprogress|300|-work|work|/home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_SecondDatapath.vhd|
+Z68 !s107 /home/gbaker05/CPRE381/QuestaSim/Lab2/MySecondRISC-VDatapath/tb_SecondDatapath.vhd|
+!i113 0
+R14
+R15
+Adatapath2
+R54
+R3
+R4
+R5
+DEx4 work 17 tb_seconddatapath 0 22 jH<6hRKV;alWF]0Sl?K8_0
+!i122 12
+l47
+L9 286
+VY`WL]EeTh[NaX5ciig86T0
+!s100 XC70hj<nlQj13d<JK4:c@0
+R9
+32
+R65
+!i10b 1
+R66
+R67
+R68
+!i113 0
+R14
+R15

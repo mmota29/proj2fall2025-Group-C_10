@@ -1,0 +1,319 @@
+--tb_SecondDatapath.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity tb_SecondDatapath is
+end entity;
+
+architecture datapath2 of tb_SecondDatapath is
+
+	component SecondDatapath
+	port (
+		clk	: in std_logic;
+		rst	: in std_logic;
+		rs1_addr	: in std_logic_vector(4 downto 0);
+		rs2_addr	: in std_logic_vector(4 downto 0);
+		rd_addr	: in std_logic_vector(4 downto 0);
+		reg_we  : in std_logic;
+		n_AddSub	: in std_logic;
+		ALUSrc	: in std_logic;
+		mem_we	: in std_logic;
+		mem_rd	: in std_logic;
+		mem_reg	: in std_logic;
+		imm12	: in std_logic_vector(11 downto 0);
+		alu_out : out std_logic_vector(31 downto 0);
+		mem_out : out std_logic_vector(31 downto 0)
+	);
+	end component;
+	
+	signal clk : std_logic := '0';
+	signal rst : std_logic := '1';
+	signal rs1_addr : std_logic_vector(4 downto 0);
+	signal rs2_addr : std_logic_vector(4 downto 0);
+	signal rd_addr : std_logic_vector(4 downto 0);
+	signal reg_we : std_logic;
+	signal n_AddSub : std_logic;
+	signal ALUSrc : std_logic;
+	signal mem_we : std_logic;
+	signal mem_rd : std_logic;
+	signal mem_reg : std_logic;
+	signal imm12 : std_logic_vector(11 downto 0);
+	signal alu_out : std_logic_vector(31 downto 0);
+	signal mem_out : std_logic_vector(31 downto 0);
+
+	constant PERIOD : time := 100 ns;
+
+begin
+	
+	clock: process
+	begin
+	while true loop
+		clk <= '0';
+		wait for PERIOD / 2;
+		clk <= '1';
+		wait for PERIOD / 2;
+	end loop;
+	end process;
+	
+	DUT: entity work.SecondDatapath
+	port map (
+		clk => clk,
+		rst => rst,
+		rs1_addr => rs1_addr,
+		rs2_addr => rs2_addr,
+		rd_addr => rd_addr,
+		reg_we => reg_we,
+		n_AddSub => n_AddSub,
+		ALUSrc => ALUSrc,
+		mem_we => mem_we,
+		mem_rd => mem_rd,
+		mem_reg => mem_reg,
+		imm12 => imm12,
+		alu_out => alu_out,
+		mem_out => mem_out
+	);
+	
+	testbench: process
+	begin
+		--initialize
+		rst <= '0';
+		wait for PERIOD;
+		
+		--addi x25, zero, 0
+		rs1_addr <= "00000";
+		rs2_addr <= "00000";
+		rd_addr <= "11001";
+		imm12 <= x"000";
+		reg_we <= '1';
+		n_AddSub <= '0';
+		ALUSrc <= '1';
+		mem_we <= '0';
+		mem_rd <= '0';
+		mem_reg <= '0';
+		wait for PERIOD;
+		--x25 = 0x00000000
+		
+		--addi x26, zero, 256
+		rd_addr <= "11010";
+		imm12 <= x"100";
+		wait for PERIOD;
+		--x26 = 0x00000100
+		
+		--lw x1, 0(x25)
+		rs1_addr <= "11001";
+		imm12 <= x"000";
+		ALUSrc <= '1';
+		reg_we <= '1';
+		mem_we <= '0';
+		mem_rd <= '1';
+		mem_reg <= '1';
+		rd_addr <= "00001";
+		wait for PERIOD;
+		--x1 = A[0]
+		
+		--lw x2, 4(x25)
+		imm12 <= x"004";
+		rd_addr <= "00010";
+		wait for PERIOD;
+		--x2 = A[1]
+		
+		--add x1, x1, x2
+		rs1_addr <= "00001";
+		rs2_addr <= "00010";
+		ALUSrc <= '0';
+		n_AddSub <= '0';
+		mem_reg <= '0';
+		rd_addr <= "00001";
+		wait for PERIOD;
+		--x1 = A[0] + A[1]
+
+		--sw x1, 0(x26)
+		rs1_addr <= "11010";
+		rs2_addr <= "00001";
+		imm12 <= x"000";
+		ALUSrc <= '1';
+		reg_we <= '0';
+		mem_we <= '1';
+		wait for PERIOD;
+		--mem[0x100] = x1
+
+		--lw x2, 8(x25)
+		rs1_addr <= "11001";
+		imm12 <= x"008";
+		mem_we <= '0';
+		mem_rd <= '1';
+		mem_reg <= '1';
+		reg_we <= '1';
+		rd_addr <= "00010";
+		wait for PERIOD;	
+		--x2 = A[2]	
+
+		--add x1, x1, x2
+		rs1_addr <= "00001";
+		rs2_addr <= "00010";
+		ALUSrc <= '0';
+		n_AddSub <= '0';
+		mem_reg <= '0';
+		rd_addr <= "00001";
+		wait for PERIOD;
+		--x1 = A[0] + A[1] + A[2]
+
+		--sw x1, 4(x26)
+		rs1_addr <= "11010";
+		rs2_addr <= "00001";
+		imm12 <= x"004";
+		ALUSrc <= '1';
+		mem_we <= '1';
+		reg_we <= '0';
+		wait for PERIOD;
+		--mem[0x104] = x1
+
+		--lw x2, 12(x25)
+		rs1_addr <= "11001";
+		imm12 <= x"00C";
+		mem_we <= '0';
+		mem_rd <= '1';
+		mem_reg <= '1';
+		reg_we <= '1';
+		rd_addr <= "00010";
+		wait for PERIOD;
+		--x2 = A[3]	
+
+		--add x1, x1, x2
+		rs1_addr <= "00001";
+		rs2_addr <= "00010";
+		ALUSrc <= '0';
+		n_AddSub <= '0';
+		mem_reg <= '0';
+		rd_addr <= "00001";
+		wait for PERIOD;
+		--x1  = A[0]... + A[3]
+
+		--sw x1, 8(x26)
+		rs1_addr <= "11010";
+		rs2_addr <= "00001";
+		imm12 <= x"008";
+		ALUSrc <= '1';
+		mem_we <= '1';
+		reg_we <= '0';
+		wait for PERIOD;
+		--mem[0x108] = x1
+
+		--lw x2, 16(x25)
+		rs1_addr <= "11001";
+		imm12 <= x"010";
+		mem_we <= '0';
+		mem_rd <= '1';
+		mem_reg <= '1';
+		reg_we <= '1';
+		rd_addr <= "00010";
+		wait for PERIOD;
+		--x2 = A[4]	
+
+		--add x1, x1, x2
+		rs1_addr <= "00001";
+		rs2_addr <= "00010";
+		ALUSrc <= '0';
+		n_AddSub <= '0';
+		mem_reg <= '0';
+		rd_addr <= "00001";
+		wait for PERIOD;
+		--x1 = A[0]... + A[4]
+
+		--sw x1, 12(x26)
+		rs1_addr <= "11010";
+		rs2_addr <= "00001";
+		imm12 <= x"00C";
+		ALUSrc <= '1';
+		mem_we <= '1';
+		reg_we <= '0';
+		wait for PERIOD;
+		--mem[0x10C] = x1
+
+		--lw x2, 20(x25)
+		rs1_addr <= "11001";
+		imm12 <= x"014";
+		mem_we <= '0';
+		mem_rd <= '1';
+		mem_reg <= '1';
+		reg_we <= '1';
+		rd_addr <= "00010";
+		wait for PERIOD;	
+		--x2 = A[5]
+
+		--add x1, x1, x2
+		rs1_addr <= "00001";
+		rs2_addr <= "00010";
+		ALUSrc <= '0';
+		n_AddSub <= '0';
+		mem_reg <= '0';
+		rd_addr <= "00001";
+		wait for PERIOD;
+		--x1 = A[0]... + A[5]
+
+		--sw x1, 16(x26)
+		rs1_addr <= "11010";
+		rs2_addr <= "00001";
+		imm12 <= x"010";
+		ALUSrc <= '1';
+		mem_we <= '1';
+		reg_we <= '0';
+		wait for PERIOD;
+		--mem[0x110] = x1
+
+		--lw x2, 24(x25)
+		rs1_addr <= "11001";
+		imm12 <= x"018";
+		mem_we <= '0';
+		mem_rd <= '1';
+		mem_reg <= '1';
+		reg_we <= '1';
+		rd_addr <= "00010";
+		wait for PERIOD;	
+		--x2 = A[6]
+
+		--add x1, x1, x2
+		rs1_addr <= "00001";
+		rs2_addr <= "00010";
+		ALUSrc <= '0';
+		n_AddSub <= '0';
+		mem_reg <= '0';
+		rd_addr <= "00001";
+		wait for PERIOD;
+		--x1 = A[0]... + A[6]
+
+		--addi x27, zero, 512
+		rs1_addr <= "00000";
+		rd_addr <= "11011";
+		imm12 <= x"200";
+		ALUSrc <= '1';
+		reg_we <= '1';
+		mem_we <= '0';
+		wait for PERIOD;
+		--x27 = 0x200
+
+		--sw x1, -4(x27)
+		rs1_addr <= "11011";
+		rs2_addr <= "00001";
+		imm12 <= x"FFC";
+		ALUSrc <= '1';
+		mem_we <= '1';
+		reg_we <= '0';
+		wait for PERIOD;
+		--mem[0x1FC] = x1
+		
+		--sw x1, -4(x27)
+		rs1_addr <= "11011";
+		rs2_addr <= "00001";
+		imm12 <= x"FFC";
+		ALUSrc <= '1';
+		mem_we <= '1';
+		reg_we <= '0';
+		wait for PERIOD;
+		--mem[0x1FC] = x1 (again)
+		
+		wait;
+	end process;
+
+end datapath2;

@@ -1,0 +1,107 @@
+--SecondDatapath.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity SecondDatapath is
+	port (
+	clk	: in std_logic;
+	rst	: in std_logic;
+	rs1_addr	: in std_logic_vector(4 downto 0);
+	rs2_addr	: in std_logic_vector(4 downto 0);
+	rd_addr	: in std_logic_vector(4 downto 0);
+	reg_we	: in std_logic;
+	n_AddSub	: in std_logic;
+	ALUSrc	: in std_logic;
+	mem_we 	: in std_logic;
+	mem_rd	: in std_logic;
+	mem_reg	: in std_logic;
+	imm12	: in std_logic_vector(11 downto 0);
+	alu_out	: out std_logic_vector(31 downto 0);
+	mem_out	: out std_logic_vector(31 downto 0)
+	);
+end SecondDatapath;
+
+architecture struct of SecondDatapath is
+
+	signal rs1_data : std_logic_vector(31 downto 0);
+	signal rs2_data : std_logic_vector(31 downto 0);
+	signal imm_ext : std_logic_vector(31 downto 0);
+	signal alu_in2 : std_logic_vector(31 downto 0);
+	signal alu_result : std_logic_vector(31 downto 0);
+	signal mem_rd_data : std_logic_vector(31 downto 0);
+	signal reg_write_data : std_logic_vector(31 downto 0);
+
+begin
+	
+	imm_extender: entity work.extender_12to32
+	port map (
+		imm12 => imm12,
+		sign_sel => '1',
+		imm32 => imm_ext
+	);
+	
+	reg_init: entity work.RegFile
+	port map (
+		clk => clk,
+		rst => rst,
+		en => reg_we,
+		rs1_ad => rs1_addr,
+		rs2_ad => rs2_addr,
+		rd_ad => rd_addr,
+		rd_data => reg_write_data,
+		rs1_data => rs1_data,
+		rs2_data => rs2_data
+	);
+		
+	alu_mux: process(rs2_data, imm_ext, ALUSrc)
+	begin
+	if ALUSrc = '1' then
+		alu_in2 <= imm_ext;
+	else
+		alu_in2 <= rs2_data;
+	end if;
+	end process;
+
+	alu_proc: process(rs1_data, alu_in2, n_AddSub)
+		variable a : signed(31 downto 0);
+		variable b : signed(31 downto 0);
+		variable result : signed(31 downto 0);
+	begin
+	a := signed(rs1_data);
+	b := signed(alu_in2);
+	if n_AddSub = '0' then
+		result := a + b;
+	else
+		result := a - b;
+	end if;
+	alu_result <= std_logic_vector(result);
+	end process;
+
+	alu_out <= alu_result;
+
+	dmem_init: entity work.mem
+	generic map (
+		DATA_WIDTH => 32,
+		ADDR_WIDTH => 10
+	)
+	port map (
+		clk => clk,
+		addr => alu_result(9 downto 0),
+		data => rs2_data,
+		we => mem_we,
+		q => mem_rd_data
+	);
+
+	mem_out <= mem_rd_data;
+
+	reg_write_mux: process(alu_result, mem_rd_data, mem_reg)
+	begin
+	if mem_reg = '1' then
+		reg_write_data <= mem_rd_data;
+	else
+		reg_write_data <= alu_result;
+	end if;
+	end process;
+
+end struct;

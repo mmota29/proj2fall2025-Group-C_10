@@ -1,0 +1,44 @@
+-- AddSub.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains an implementation of a ripple carry adder
+-- that can take any N-bits.
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity AddSub is
+
+	generic(N : integer := 8);
+
+  port(
+       i0          : in std_logic_vector(N-1 downto 0);
+       i1          : in std_logic_vector(N-1 downto 0);
+       add_sub	    : in std_logic;
+       o_O	    : out std_logic_vector(N-1 downto 0);
+       C_out          : out std_logic);
+
+end AddSub;
+
+architecture dataflow of AddSub is
+
+signal i1_int : std_logic_vector(N-1 downto 0);
+signal Cin : unsigned(N-1 downto 0);
+signal temp : unsigned(N downto 0);
+
+begin -- Major help from GPT, prompt was "add/sub logic in VHDL".
+	
+	Cin <= (others => '0'); -- Figuring out add/sub
+	Cin(0) <= add_sub;
+
+	i1_int <= i1 xor (N-1 downto 0 => add_sub); -- If subtracting, XOR B with add_sub
+
+	temp <= unsigned(i0) + unsigned(i1_int) + Cin; -- Just addition.
+ 
+	o_O <= std_logic_vector(temp(N-1 downto 0)); 
+	
+	C_out <= temp(N);
+	
+  
+end dataflow;

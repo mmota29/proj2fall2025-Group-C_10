@@ -1,0 +1,164 @@
+--riscv_cpu.vhd
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.control_pkg.all;
+
+entity riscv_cpu is
+  port (
+    clk   : in  std_logic;
+    rst   : in  std_logic
+  );
+end entity;
+
+architecture structural of riscv_cpu is
+  -- FETCH
+  signal pc, instr : std_logic_vector(31 downto 0);
+
+  -- DECODE
+  signal rs1, rs2, rd : std_logic_vector(4 downto 0);
+  signal imm          : std_logic_vector(31 downto 0);
+  signal pcSel        : std_logic_vector(1 downto 0);
+  signal aluSel       : std_logic_vector(3 downto 0);
+  signal wbSel        : std_logic_vector(1 downto 0);
+  signal aluSrc       : std_logic;
+  signal regWrite     : std_logic;
+  signal memWrite     : std_logic;
+  signal memRead      : std_logic;
+  signal size         : std_logic_vector(1 downto 0);
+  signal sign         : std_logic;
+
+  -- EXECUTE
+  signal rs1_data, rs2_data : std_logic_vector(31 downto 0);
+  signal alu_b_in           : std_logic_vector(31 downto 0);
+  signal alu_out            : std_logic_vector(31 downto 0);
+
+  -- MEMORY
+  signal rdata : std_logic_vector(31 downto 0);
+
+  -- BRANCH
+  signal branch_tgt, jalr_tgt, jump_tgt : std_logic_vector(31 downto 0);
+  signal zero_flag : std_logic;
+begin
+
+  -------------------------------------------------------------------
+  -- FETCH UNIT
+  -------------------------------------------------------------------
+  FETCH: entity work.fetch_unit
+    generic map (
+      START_PC => x"00000100"
+    )
+    port map (
+      clk        => clk,
+      rst        => rst,
+      pcSel      => pcSel,
+      branch_tgt => branch_tgt,
+      jalr_tgt   => jalr_tgt,
+      jump_tgt   => jump_tgt,
+      instr      => instr,
+      pc         => pc
+    );
+
+  -------------------------------------------------------------------
+  -- CONTROL UNIT
+  -------------------------------------------------------------------
+  CTRL: entity work.control_unit
+    port map (
+      instr     => instr,
+      zero      => zero_flag,
+      pcSel     => pcSel,
+      aluSel    => aluSel,
+      aluSrc    => aluSrc,
+      regWrite  => regWrite,
+      memWrite  => memWrite,
+      memRead   => memRead,
+      wbSel     => wbSel,
+      size      => size,
+      sign      => sign
+    );
+
+  -------------------------------------------------------------------
+  -- REGISTER FILE
+  -------------------------------------------------------------------
+  rs1 <= instr(19 downto 15);
+  rs2 <= instr(24 downto 20);
+  rd  <= instr(11 downto 7);
+
+  RF: entity work.reg_file
+    port map (
+      clk      => clk,
+      rst      => rst,
+      we       => regWrite,
+      rs1      => rs1,
+      rs2      => rs2,
+      rd       => rd,
+      wdata    => (others => '0'), -- replaced later via WB MUX
+      rs1_data => rs1_data,
+      rs2_data => rs2_data
+    );
+
+  -------------------------------------------------------------------
+  -- IMMEDIATE GENERATOR
+  -------------------------------------------------------------------
+  IMMGEN: entity work.imm_gen
+    port map (
+      instr => instr,
+      imm   => imm
+    );
+
+  -------------------------------------------------------------------
+  -- ALU INPUT MUX
+  -------------------------------------------------------------------
+  alu_b_in <= rs2_data when aluSrc = '0' else imm;
+
+  -------------------------------------------------------------------
+  -- ALU
+  -------------------------------------------------------------------
+  ALU_INST: entity work.alu
+    port map (
+      a       => rs1_data,
+      b       => alu_b_in,
+      alu_sel => aluSel,
+      result  => alu_out,
+      zero    => zero_flag
+    );
+
+  -------------------------------------------------------------------
+  -- DATA MEMORY
+  -------------------------------------------------------------------
+  DMEM: entity work.data_mem
+    port map (
+      clk      => clk,
+      rst      => rst,
+      addr     => alu_out,
+      wdata    => rs2_data,
+      write_en => memWrite,
+      read_en  => memRead,
+      size     => size,
+      sign     => sign,
+      rdata    => rdata
+    );
+
+  -------------------------------------------------------------------
+  -- WRITE-BACK MUX
+  -------------------------------------------------------------------
+  RF_WB: process(wbSel, alu_out, rdata, pc)
+    variable wval : std_logic_vector(31 downto 0);
+  begin
+    case wbSel is
+      when "00" => wval := alu_out;       -- ALU
+      when "01" => wval := rdata;         -- MEM
+      when "10" => wval := std_logic_vector(unsigned(pc) + 4); -- PC+4
+      when others => wval := (others => '0');
+    end case;
+    RF.wdata <= wval;
+  end process;
+
+  -------------------------------------------------------------------
+  -- TARGET ADDRESS GENERATION
+  -------------------------------------------------------------------
+  branch_tgt <= std_logic_vector(unsigned(pc) + unsigned(imm));
+  jump_tgt   <= std_logic_vector(unsigned(pc) + unsigned(imm));
+  jalr_tgt   <= std_logic_vector((unsigned(rs1_data) + unsigned(imm)) and x"FFFFFFFE");
+
+end architecture;
